@@ -43,3 +43,4 @@ in the table are -
 |       Default capacity     |       The initial capacity of the collection when it is created using an empty constructor.  |
 |              |         |
 
+![](images/4.Coll_Classes_3.png)
