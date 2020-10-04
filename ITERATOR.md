@@ -34,20 +34,16 @@ in the table are -
 
 | Abbreviation | Meaning |
 |--------------|---------|
-|     AD         |         |
-|              |         |
-|              |         |
+|     AD       |    Allow Duplicates: It tells whether that particular collection allows duplicate values to be inserted.     |
+|       AN       |     Allow Null: It tells whether null objects can be inserted into that particular collection.    |
+|     Inserted Order         |         |
 |              |         |
 |              |         |
 |              |         |
 |              |         |
 |              |         |
 
-1) AD - Allow Duplicates: It tells whether that particular collection allows duplicate values
-to be inserted.
 
-2) AN - Allow Null: It tells whether null objects can be inserted into that particular
-collection.
 
 3) Inserted Order: It tells whether the objects are stored in the same order in which they
 were inserted.
