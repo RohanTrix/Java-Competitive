@@ -32,17 +32,14 @@ The below table shows various differences between the Collection classes. The te
 in the table are -
 
 
-| Abbreviation | Meaning |
-|--------------|---------|
+|           Abbreviation     |         Meaning                    |
+|----------------------------|------------------------------------|
 |     AD       |    Allow Duplicates: It tells whether that particular collection allows duplicate values to be inserted.     |
 |       AN       |     Allow Null: It tells whether null objects can be inserted into that particular collection.    |
 |     Inserted Order         |   It tells whether the objects are stored in the same order in which they were inserted.      |
 |  Sorted Order      |   It tells whether the objects are stored in sorted order.      |
 | Synchronized    |  It tells whether the collection is thread-safe or not.   |
 |       Random Access       |  It tells whether the collection has a get() method to returns the index of an object or return the object using an index.       |
-|       Default capacity     |         |
+|       Default capacity     |       The initial capacity of the collection when it is created using an empty constructor.  |
 |              |         |
 
-6) Random Access: It tells whether the collection has a get() method to returns the index of an object or return the object using an index.
-
-7) Default capacity: The initial capacity of the collection when it is created using an empty constructor.
