@@ -13,5 +13,6 @@ returns `true`.
 ![img](images\1.Iterator_1.png)
 ---
 # THE COLLECTION INTERFACES
+![img](images\1.Iterator_1.png)
 
 
