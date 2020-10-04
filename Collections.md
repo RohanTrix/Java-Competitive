@@ -10,19 +10,19 @@ returns `true`.
 
 ## TYPES OF ITERATOR:
 
-![img](images\1.Iterator_1.png)
+![img](images/1.Iterator_1.png)
 ---
 # THE COLLECTION INTERFACES
 The Collection Classes implementing these interfaces have the functionality of these
 interfaces. Therefore, these interfaces define the core behavior of a Collection class.
 
-![img](images\2.Coll_Inter.png)
+![img](images/2.Coll_Inter.png)
 
 # THE COLLECTION ABSTRACT CLASSES
 The Abstract Classes provide skeletal implementations that are used as starting points for
 creating concrete Collections.
 
-![img](images\3.Coll_Abs_Class.png)
+![img](images/3.Coll_Abs_Class.png)
 
 # THE COLLECTION CLASSES
 
