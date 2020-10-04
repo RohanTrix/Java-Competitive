@@ -95,5 +95,6 @@ Framework.
 
 ## THE LEGACY CLASSES:
 
+The below table shows the differences between various Legacy classes. The terms used in the table are same as the ones used in Collection classes table.
 
-
+![](images/10.Leg_Class.png)
