@@ -10,4 +10,4 @@ returns `true`.
 
 ## TYPES OF ITERATOR:
 
-![](imagers)
+![img](images\1.Iterator_1.png)
