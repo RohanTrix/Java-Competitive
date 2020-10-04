@@ -52,3 +52,12 @@ The Time Complexities of basic operations are given below:
 ![](images/11.Coll_Time_1.png)
 
 # MAPS
+
+● A map is an object that stores key/value pairs.
+
+● The keys must be unique but the values may be duplicated.
+
+● Maps don’t implement the Iterable interface. Therefore, you can’t obtain an iterator to a
+map.
+
+## 
