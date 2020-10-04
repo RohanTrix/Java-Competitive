@@ -66,3 +66,7 @@ map.
 
 ## THE MAP ABSTRACT CLASS:
 ![](images/6.Map_Abs_Class.png)
+
+## THE MAP CLASSES:
+
+These classes provide concrete implementation of the Map which can used by programmers.
