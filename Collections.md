@@ -76,4 +76,10 @@ These classes provide concrete implementation of the Map which can used by progr
 
 The Time Complexities of basic operations are given below:
 
+![](images/12.Map_Time.png)
+
+# THE LEGACY CLASSES AND INTERFACES:
+
+
+
 
