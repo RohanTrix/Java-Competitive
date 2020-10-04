@@ -78,8 +78,14 @@ The Time Complexities of basic operations are given below:
 
 ![](images/12.Map_Time.png)
 
-# THE LEGACY CLASSES AND INTERFACES:
+## THE LEGACY CLASSES AND INTERFACES:
 
+● These classes were used to store objects before the development of Collections
+Framework.
+
+● All the legacy classes are synchronized.
+
+## THE LEGACY INTERFACE:
 
 
 
