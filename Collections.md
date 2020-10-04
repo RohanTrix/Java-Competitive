@@ -1,6 +1,7 @@
 # Collections
 ### The Collection Framework Hierarchy
 ![](images/Collection-Framework-1.png)
+![](images/Collection-Framework-2.png)
 # ITERATOR
 Iterators are used to cycle through or access all the elements of a collection in a particular order.
 
