@@ -13,6 +13,8 @@ returns `true`.
 ![img](images\1.Iterator_1.png)
 ---
 # THE COLLECTION INTERFACES
-![img](images\1.Iterator_1.png)
+![img](images\2.Coll_Inter.png)
+
+# THE COLLECTION ABSTRACT CLASSES
 
 
