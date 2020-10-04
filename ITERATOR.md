@@ -31,6 +31,18 @@ These standard classes provide full implementation of the Collection that can be
 The below table shows various differences between the Collection classes. The terms used
 in the table are -
 
+
+| Abbreviation | Meaning |
+|--------------|---------|
+|     AD         |         |
+|              |         |
+|              |         |
+|              |         |
+|              |         |
+|              |         |
+|              |         |
+|              |         |
+
 1) AD - Allow Duplicates: It tells whether that particular collection allows duplicate values
 to be inserted.
 
