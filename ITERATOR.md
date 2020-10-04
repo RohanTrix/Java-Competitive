@@ -36,17 +36,16 @@ in the table are -
 |--------------|---------|
 |     AD       |    Allow Duplicates: It tells whether that particular collection allows duplicate values to be inserted.     |
 |       AN       |     Allow Null: It tells whether null objects can be inserted into that particular collection.    |
-|     Inserted Order         |         |
-|              |         |
-|              |         |
+|     Inserted Order         |   It tells whether the objects are stored in the same order in which they were inserted.      |
+|  Sorted Order      |   It tells whether the objects are stored in sorted order.      |
+| Synchronized    |  It tells whether the collection is thread-safe or not.   |
 |              |         |
 |              |         |
 |              |         |
 
 
 
-3) Inserted Order: It tells whether the objects are stored in the same order in which they
-were inserted.
+3) Inserted Order: It tells whether the objects are stored in the same order in which they were inserted.
 
 4) Sorted Order: It tells whether the objects are stored in sorted order.
 
