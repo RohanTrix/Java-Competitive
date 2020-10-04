@@ -39,20 +39,10 @@ in the table are -
 |     Inserted Order         |   It tells whether the objects are stored in the same order in which they were inserted.      |
 |  Sorted Order      |   It tells whether the objects are stored in sorted order.      |
 | Synchronized    |  It tells whether the collection is thread-safe or not.   |
+|       Random Access       |  It tells whether the collection has a get() method to returns the index of an object or return the object using an index.       |
+|       Default capacity     |         |
 |              |         |
-|              |         |
-|              |         |
 
+6) Random Access: It tells whether the collection has a get() method to returns the index of an object or return the object using an index.
 
-
-3) Inserted Order: It tells whether the objects are stored in the same order in which they were inserted.
-
-4) Sorted Order: It tells whether the objects are stored in sorted order.
-
-5) Synchronized: It tells whether the collection is thread-safe or not.
-
-6) Random Access: It tells whether the collection has a get() method to returns the index
-of an object or return the object using an index.
-
-7) Default capacity: The initial capacity of the collection when it is created using an empty
-constructor.
+7) Default capacity: The initial capacity of the collection when it is created using an empty constructor.
