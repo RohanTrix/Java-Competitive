@@ -21,5 +21,31 @@ interfaces. Therefore, these interfaces define the core behavior of a Collection
 # THE COLLECTION ABSTRACT CLASSES
 The Abstract Classes provide skeletal implementations that are used as starting points for
 creating concrete Collections.
+
 ![img](images\3.Coll_Abs_Class.png)
 
+# THE COLLECTION CLASSES
+
+These standard classes provide full implementation of the Collection that can be used as-is.
+
+The below table shows various differences between the Collection classes. The terms used
+in the table are -
+
+1) AD - Allow Duplicates: It tells whether that particular collection allows duplicate values
+to be inserted.
+
+2) AN - Allow Null: It tells whether null objects can be inserted into that particular
+collection.
+
+3) Inserted Order: It tells whether the objects are stored in the same order in which they
+were inserted.
+
+4) Sorted Order: It tells whether the objects are stored in sorted order.
+
+5) Synchronized: It tells whether the collection is thread-safe or not.
+
+6) Random Access: It tells whether the collection has a get() method to returns the index
+of an object or return the object using an index.
+
+7) Default capacity: The initial capacity of the collection when it is created using an empty
+constructor.
