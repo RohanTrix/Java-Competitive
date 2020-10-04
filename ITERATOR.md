@@ -11,3 +11,7 @@ returns `true`.
 ## TYPES OF ITERATOR:
 
 ![img](images\1.Iterator_1.png)
+---
+# THE COLLECTION INTERFACES
+
+
