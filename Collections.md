@@ -50,3 +50,5 @@ in the table are -
 The Time Complexities of basic operations are given below:
 
 ![](images/11.Coll_Time_1.png)
+
+# MAPS
