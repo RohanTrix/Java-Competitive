@@ -87,5 +87,13 @@ Framework.
 
 ## THE LEGACY INTERFACE:
 
+![](images/8.Leg_Inter.png)
+
+## THE LEGACY ABSTRACT CLASS:
+
+![](images/9.Leg_Abs.png)
+
+## THE LEGACY CLASSES:
+
 
 
