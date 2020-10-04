@@ -21,13 +21,13 @@ interfaces. Therefore, these interfaces define the core behavior of a Collection
 
 ![img](images/2.Coll_Inter.png)
 
-# THE COLLECTION ABSTRACT CLASSES
+## THE COLLECTION ABSTRACT CLASSES
 The Abstract Classes provide skeletal implementations that are used as starting points for
 creating concrete Collections.
 
 ![img](images/3.Coll_Abs_Class.png)
 
-# THE COLLECTION CLASSES
+## THE COLLECTION CLASSES
 
 These standard classes provide full implementation of the Collection that can be used as-is.
 
@@ -51,7 +51,7 @@ The Time Complexities of basic operations are given below:
 
 ![](images/11.Coll_Time_1.png)
 
-# MAPS
+## MAPS
 
 ● A map is an object that stores key/value pairs.
 
@@ -62,3 +62,6 @@ map.
 
 ## THE MAP INTERFACE
 
+![](images/5.Map_Inter.png)
+
+![](6.Map_Abs_Class.png)
