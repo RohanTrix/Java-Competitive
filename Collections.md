@@ -46,4 +46,4 @@ in the table are -
 ![](images/4.Coll_Classes_3.png)
 The Time Complexities of basic operations are given below:
 
-![]()
+![](images/11.Coll_Time_1.png)
