@@ -9,3 +9,5 @@ returns `true`.
 3. Within the loop, obtain each element by calling `next()`.
 
 ## TYPES OF ITERATOR:
+
+![](imagers)
