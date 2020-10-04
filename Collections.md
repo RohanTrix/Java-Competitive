@@ -64,4 +64,5 @@ map.
 
 ![](images/5.Map_Inter.png)
 
-![](6.Map_Abs_Class.png)
+## THE MAP ABSTRACT CLASS:
+![](images/6.Map_Abs_Class.png)
