@@ -59,18 +59,10 @@ public class My_Fast_IO
             return str; 
         } 
     } 
-    public static void main() 
+    public static void main(String[] args) 
     { 
         FastReader s=new FastReader(); 
         int n = s.nextInt(); 
-        int k = s.nextInt(); 
-        int count = 0; 
-        while (n-- > 0) 
-        { 
-            int x = s.nextInt(); 
-            if (x%k == 0) 
-               count++; 
-        } 
-        System.out.println(count); 
+        System.out.println(n); 
     } 
 }
