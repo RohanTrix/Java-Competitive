@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException; 
 import java.io.InputStreamReader;  
 import java.util.StringTokenizer;  
-class My_Fast_IO 
+public class My_Fast_IO 
 { 
     static class FastReader 
     { 
@@ -58,11 +58,19 @@ class My_Fast_IO
             } 
             return str; 
         } 
-    }
-    public static void main()
-    {
-        FastReader sc = new FastReader();
-        int n = sc.nextInt();
-        System.out.println(n);
-    }
+    } 
+    public static void main() 
+    { 
+        FastReader s=new FastReader(); 
+        int n = s.nextInt(); 
+        int k = s.nextInt(); 
+        int count = 0; 
+        while (n-- > 0) 
+        { 
+            int x = s.nextInt(); 
+            if (x%k == 0) 
+               count++; 
+        } 
+        System.out.println(count); 
+    } 
 }
