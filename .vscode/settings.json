@@ -1,0 +1,6 @@
+{
+    "[java]": {
+    
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    }
+}
