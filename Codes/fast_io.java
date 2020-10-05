@@ -62,6 +62,7 @@ class My_Fast_IO
     public static void main()
     {
         FastReader sc = new FastReader();
-        int n = sc.nextInt()
+        int n = sc.nextInt();
+        System.out.println(n);
     }
 }
