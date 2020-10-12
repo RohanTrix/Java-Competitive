@@ -19,10 +19,10 @@ ArrayList is a part of collection framework and is present in java.util package.
 * `void add(int index, Object element)`
   > Inserts the specified element at the specified position in this ArrayList.
 
- * `boolean	add(Object o)`
+* `boolean	add(Object o)`
   > Appends the specified element to the end of this ArrayList.
 
- * `boolean	addAll(Collection c)`
+* `boolean	addAll(Collection c)`
   > Appends all of the elements in the specified Collection to the end of this this ArrayList, in the order that they are returned by the specified Collection's Iterator.
 
 * `boolean addAll(int index, Collection c)`
@@ -38,13 +38,13 @@ ArrayList is a part of collection framework and is present in java.util package.
   > Returns the element at the specified position in this ArrayList.
 * `int	indexOf(Object elem)`
   > Searches for the first occurence of the given argument, testing for equality using the equals method.
- * `boolean	isEmpty()`
+* `boolean	isEmpty()`
   > Tests if this ArrayList has no components.
- * `int	lastIndexOf(Object elem)`
+* `int	lastIndexOf(Object elem)`
   > Returns the index of the last occurrence of the specified object in this ArrayList.
- * `Object	remove(int index)`
+* `Object	remove(int index)`
   > Removes the element at the specified position in this ArrayList.
- * `Object	set(int index, Object element)`
+* `Object	set(int index, Object element)`
   > Replaces the element at the specified position in this ArrayList with the specified element.
 * `int size()`
-          Returns the number of components in this ArrayList.
+  > Returns the number of components in this ArrayList.
