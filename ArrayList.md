@@ -1,5 +1,9 @@
 # ArrayList
+---
 ArrayList is a part of collection framework and is present in java.util package. It provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed.
+---
+
+### NOTE: ArrayList is the BEST choice for retrieval operations while WORST choice for inserting values in some position of ArrayList
 
 ![](images/ArrayList.png)
 
@@ -8,7 +12,6 @@ ArrayList is a part of collection framework and is present in java.util package.
 ![](images/Array_List_Durga1.JPG)
 ![](images/Array_List_Durga2.JPG)
 
-## ArrayList is the BEST choice for retrieval operations while WORST choice for inserting values in 
 
 ### To create ArrayList with capacity `initialCapacity`
 
