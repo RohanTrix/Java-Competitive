@@ -69,3 +69,13 @@ Linked List is a part of the Collection framework present in `java.util package`
   > Returns an array containing all of the elements in this list in proper sequence.
 * ### `List subList(int fromIndex, int toIndex)`
   > Returns a view of the portion of this list between the specified fromIndex (inclusive) and toIndex (exclusive).
+
+In Java LinkedList class, manipulation is fast because no shifting needs to be occurred. So essentially, all add and remove method provide very good performance O(1).
+
+* add(E element) method is of O(1).
+* get(int index) and add(int index, E element) methods are of O(n).
+* remove(int index) method is of O(n).
+* Iterator.remove() is O(1).
+* ListIterator.add(E element) is O(1).
+
+**LinkedList should be preferred there are no large number of random access of element while there are a large number of add/remove operations.**
