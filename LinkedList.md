@@ -30,10 +30,16 @@ Linked List is a part of the Collection framework present in `java.util package`
   > Return true if the list contains a specified element, else false.
 * ### `boolean remove(Object o)` 
   > Removes the first occurence of the specified element in a list.
-* ### `Object getFirst()` : returns the first element in a list.
-* ### `Object getLast()` : returns the last element in a list.
-* ### `int indexOf(Object o)` : returns the index in a list of the first occurrence of the specified element, or -1 if the list does not contain specified element.
-* ### `lastIndexOf(Object o)` : returns the index in a list of the last occurrence of the specified element, or -1 if the list does not contain specified element.
-* ### `Iterator iterator()` : returns an iterator over the elements in this list in proper sequence.
-* ### `Object[] toArray()` : returns an array containing all of the elements in this list in proper sequence.
+* ### `Object getFirst()` 
+  >Returns the first element in a list.
+* ### `Object getLast()`
+  > Returns the last element in a list.
+* ### `int indexOf(Object o)`
+  > Returns the index in a list of the first occurrence of the specified element, or -1 if the list does not contain specified element.
+* ### `lastIndexOf(Object o)`
+  > Returns the index in a list of the last occurrence of the specified element, or -1 if the list does not contain specified element.
+* ### `Iterator iterator()`
+  > Returns an iterator over the elements in this list in proper sequence.
+* ### `Object[] toArray()`
+  > eturns an array containing all of the elements in this list in proper sequence.
 * ### `List subList(int fromIndex, int toIndex)` : returns a view of the portion of this list between the specified fromIndex (inclusive) and toIndex (exclusive).
