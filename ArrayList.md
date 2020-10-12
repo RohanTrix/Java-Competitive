@@ -6,3 +6,8 @@ ArrayList is a part of collection framework and is present in java.util package.
 ## Imp Properties of ArrayList.
 
 ![](images/Array_List_Durga1.JPG)
+![](images/Array_List_Durga2.JPG)
+#### To create ArrayList with capacity `initialCapacity`
+![](images/Array_List_Durga3.JPG)
+#### To convert a Collection into an ArrayList
+![](images/Array_List_Durga4.JPG)
