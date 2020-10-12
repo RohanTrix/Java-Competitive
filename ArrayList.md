@@ -20,8 +20,9 @@ ArrayList is a part of collection framework and is present in `java.util package
 
 ### To convert a `Collection` object into an ArrayList, it creates an ArrayList from the objects of the `Collection` c
 
-
 ![](images/Array_List_Durga4.JPG)
+
+## Methods of ArrayList
 
 * ### `boolean	add(Object o)`
   > Appends the specified element to the end of this ArrayList.
