@@ -6,5 +6,9 @@ Linked List is a part of the Collection framework present in `java.util package`
 ![](images/LinkedList_Durga1.jpg)
 ![](images/LinkedList_Durga2.jpg)
 
-#LinikedList Constructors
+# LinikedList Constructors
 
+To create empty LinkedList object
+![](images/LinkedList_Durga3.jpg)
+
+![](images/LinkedList_Durga4.jpg)
