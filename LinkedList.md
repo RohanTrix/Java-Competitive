@@ -20,12 +20,23 @@ Linked List is a part of the Collection framework present in `java.util package`
   > Appends the specified element to the end of a list.
 * ### `void add(int index, Object element)`
   > Inserts the specified element at the specified position index in a list.
-* ### `void addFirst(Object o)` :
+  ```java
+     LinkedList<String> ll = new LinkedList<>();  
+    
+     ll.add("Geeks");  
+     ll.add("Geeks");  
+     ll.add(1, "For");  
+    
+     System.out.println(ll);
+  ```
+* ### `void addFirst(Object o)`
   >Inserts the given element at the beginning of a list.
-* ### `void addLast(Object o)` :
+* ### `void addLast(Object o)`
   > Appends the given element to the end of a list.
 * ### `int size()` : 
   > Returns the number of elements in a list
+* ### `Object set(int index, Object element)`
+  > Replaces any particular element in the linked list and returns the previous value from the linked list that is replaced with the new value.
 * ### `boolean contains(Object o)` 
   > Return true if the list contains a specified element, else false.
 * ### `boolean remove(Object o)` 
@@ -34,6 +45,20 @@ Linked List is a part of the Collection framework present in `java.util package`
   >Returns the first element in a list.
 * ### `Object getLast()`
   > Returns the last element in a list.
+* ### `Object get(int index)`
+  > Returns the element at given index
+  ```java
+     LinkedList<String> ll  
+            = new LinkedList<>();  
+    
+     ll.add("Geeks");  
+     ll.add("Geeks");  
+     ll.add(1, "For");  
+
+     for (int i = 0; i < ll.size(); i++)  
+
+        System.out.print(ll.get(i) + " ");   
+
 * ### `int indexOf(Object o)`
   > Returns the index in a list of the first occurrence of the specified element, or -1 if the list does not contain specified element.
 * ### `lastIndexOf(Object o)`
