@@ -102,19 +102,19 @@ ArrayList is a part of collection framework and is present in java.util package.
 * ### `int size()`
   > Returns the number of components in this ArrayList.
   ```java
-  ArrayList<String> al 
-            = new ArrayList<>(); 
+     ArrayList<String> al  = new ArrayList<>(); 
   
-        al.add("Geeks"); 
-        al.add("Geeks"); 
-        al.add(1, "For"); 
+     al.add("Geeks"); 
+     al.add("Geeks"); 
+     al.add(1, "For"); 
   
         // Using the Get method and the 
         // for loop 
-        for (int i = 0; i < al.size(); i++) { 
+     for (int i = 0; i < al.size(); i++)
+     { 
   
-            System.out.print(al.get(i) + " "); 
-        } 
+        System.out.print(al.get(i) + " "); 
+     } 
   
         System.out.println(); 
   
@@ -122,4 +122,4 @@ ArrayList is a part of collection framework and is present in java.util package.
         for (String str : al) 
             System.out.print(str + " "); 
     } 
-}
+    ```
