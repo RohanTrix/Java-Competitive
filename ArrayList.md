@@ -8,6 +8,8 @@ ArrayList is a part of collection framework and is present in java.util package.
 ![](images/Array_List_Durga1.JPG)
 ![](images/Array_List_Durga2.JPG)
 
+## ArrayList is the BEST choice for retrieval operations while WORST choice for inserting values in 
+
 ### To create ArrayList with capacity `initialCapacity`
 
 ![](images/Array_List_Durga3.JPG)
