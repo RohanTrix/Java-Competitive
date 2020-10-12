@@ -111,15 +111,13 @@ ArrayList is a part of collection framework and is present in java.util package.
         // Using the Get method and the 
         // for loop 
      for (int i = 0; i < al.size(); i++)
-     { 
-  
+
         System.out.print(al.get(i) + " "); 
-     } 
   
-        System.out.println(); 
+     System.out.println(); 
   
-        // Using the for each loop 
-        for (String str : al) 
+     // Using the for each loop 
+     for (String str : al) 
             System.out.print(str + " "); 
     } 
     ```
