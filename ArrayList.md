@@ -42,7 +42,7 @@ ArrayList is a part of collection framework and is present in java.util package.
 * ### `boolean addAll(int index, Collection c)`
   > Inserts all of the elements in the specified Collection into this ArrayList, starting at the specified position.
 
-* ### ### `void clear()`
+* ### `void clear()`
   > Removes all of the elements from this ArrayList.
 
 * ### `Object	clone()`
@@ -51,8 +51,7 @@ ArrayList is a part of collection framework and is present in java.util package.
 * ### `boolean	contains(Object elem)`
   > Returns true if this ArrayList contains the specified element.
 
-* ### `Object	get(int index)`
-  > Returns the element at the specified position in this ArrayList.
+
 
 * ### `int	indexOf(Object elem)`
   > Searches for the first occurence of the given argument, testing for equality using the equals method.
@@ -83,6 +82,7 @@ ArrayList is a part of collection framework and is present in java.util package.
   
       System.out.println("After the Object Removal " + al);
       //After the Object Removal [Geeks]
+    ```
 * ### `Object	set(int index, Object element)`
   > Replaces the element at the specified position in this ArrayList with the specified element.
   ```java
@@ -98,6 +98,8 @@ ArrayList is a part of collection framework and is present in java.util package.
   
      System.out.println("Updated ArrayList " + al); //Updated ArrayList [Geeks, For, Geeks]
    ```
+* ### `Object	get(int index)`
+  > Returns the element at the specified position in this ArrayList.
 
 * ### `int size()`
   > Returns the number of components in this ArrayList.
