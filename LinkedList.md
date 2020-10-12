@@ -16,3 +16,17 @@ Linked List is a part of the Collection framework present in `java.util package`
 ### To create equivalent LinkedList Object for the given Collection
 ![](images/LinkedList_Durga4.jpg)
 
+* ### boolean add(Object o) : Appends the specified element to the end of a list.
+void add(int index, Object element) : inserts the specified element at the specified position index in a list.
+void addFirst(Object o) : inserts the given element at the beginning of a list.
+void addLast(Object o) : appends the given element to the end of a list.
+int size() : returns the number of elements in a list
+boolean contains(Object o) : return true if the list contains a specified element, else false.
+boolean remove(Object o) : removes the first occurence of the specified element in a list.
+Object getFirst() : returns the first element in a list.
+Object getLast() : returns the last element in a list.
+int indexOf(Object o) : returns the index in a list of the first occurrence of the specified element, or -1 if the list does not contain specified element.
+lastIndexOf(Object o) : returns the index in a list of the last occurrence of the specified element, or -1 if the list does not contain specified element.
+Iterator iterator() : returns an iterator over the elements in this list in proper sequence.
+Object[] toArray() : returns an array containing all of the elements in this list in proper sequence.
+List subList(int fromIndex, int toIndex) : returns a view of the portion of this list between the specified fromIndex (inclusive) and toIndex (exclusive).
