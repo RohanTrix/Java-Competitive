@@ -2,7 +2,7 @@
 ArrayList is a part of collection framework and is present in java.util package. It provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed.
 ---
 
-### <span style="color: red;">NOTE: ArrayList is the BEST choice for retrieval operations while WORST choice for inserting values in some position of ArrayList</span>
+### NOTE: ArrayList is the <span style="color: green;">BEST</span> choice for retrieval operations while <span style="color: red;">WORST</span> choice for inserting values in some position of ArrayList
 
 ![](images/ArrayList.png)
 
