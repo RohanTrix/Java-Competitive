@@ -1,5 +1,5 @@
 # ArrayList
-ArrayList is a part of collection framework and is present in java.util package. It provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed.
+ArrayList is a part of collection framework and is present in `java.util package`. It provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed.
 ---
 
 ### NOTE: ArrayList is the <span style="color: green;">BEST</span> choice for retrieval operations while <span style="color: red;">WORST</span> choice for inserting values in some position of ArrayList
@@ -21,10 +21,10 @@ ArrayList is a part of collection framework and is present in java.util package.
 
 ![](images/Array_List_Durga4.JPG)
 
-* `boolean	add(Object o)`
+* ### `boolean	add(Object o)`
   > Appends the specified element to the end of this ArrayList.
 
-* `void add(int index, Object element)`
+* ### `void add(int index, Object element)`
   > Inserts the specified element at the specified position in this ArrayList.
 
   ```java
