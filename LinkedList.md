@@ -41,5 +41,6 @@ Linked List is a part of the Collection framework present in `java.util package`
 * ### `Iterator iterator()`
   > Returns an iterator over the elements in this list in proper sequence.
 * ### `Object[] toArray()`
-  > eturns an array containing all of the elements in this list in proper sequence.
-* ### `List subList(int fromIndex, int toIndex)` : returns a view of the portion of this list between the specified fromIndex (inclusive) and toIndex (exclusive).
+  > Returns an array containing all of the elements in this list in proper sequence.
+* ### `List subList(int fromIndex, int toIndex)`
+  > Returns a view of the portion of this list between the specified fromIndex (inclusive) and toIndex (exclusive).
