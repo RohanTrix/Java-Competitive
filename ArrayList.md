@@ -9,6 +9,8 @@ ArrayList is a part of collection framework and is present in `java.util package
 ## Imp Properties of ArrayList.
 
 ![](images/Array_List_Durga1.JPG)
+
+## ArrayList Constructors
 ![](images/Array_List_Durga2.JPG)
 
 
