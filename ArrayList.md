@@ -12,6 +12,6 @@ ArrayList is a part of collection framework and is present in java.util package.
 
 ![](images/Array_List_Durga3.JPG)
 
-### To convert a `Collection` object into an ArrayList
+### To convert a `Collection` object into an ArrayList, cre
 
 ![](images/Array_List_Durga4.JPG)
