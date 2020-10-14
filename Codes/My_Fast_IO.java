@@ -1,7 +1,9 @@
 import java.io.BufferedReader; 
 import java.io.IOException; 
 import java.io.InputStreamReader;  
-import java.util.StringTokenizer;  
+import java.util.StringTokenizer;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;  
 public class My_Fast_IO 
 { 
     static class FastReader 
@@ -60,9 +62,15 @@ public class My_Fast_IO
         } 
     } 
     public static void main(String[] args) 
-    { 
+    {
+        PrintWriter o = new PrintWriter(new OutputStreamWriter(System.out));
         FastReader s=new FastReader(); 
-        int n = s.nextInt(); 
-        System.out.println(n); 
+        // CODE BEGIN
+        int n = s.nextInt();
+        o.println(n);
+
+        //CODE END
+        // o.flush()
+        o.close();
     } 
 }
