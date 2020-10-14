@@ -1,2 +1,2 @@
 import os
-os.system('git rm -rf Codes/Classes/*')
+os.system('rm -rf Codes/Classes/*')
