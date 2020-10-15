@@ -7,19 +7,19 @@ import java.io.PrintWriter;
 import java.io.FileReader;
 public class My_Fast_IO 
 { 
-    static class FastReader 
+    static class RohanReader 
     { 
         BufferedReader br; 
         StringTokenizer st;
         PrintWriter pw;
   
-        public FastReader() 
+        public RohanReader() 
         { 
             br = new BufferedReader(new
                      InputStreamReader(System.in));
             pw = new PrintWriter(new OutputStreamWriter(System.out));
         }
-        public FastReader(boolean b)
+        public RohanReader(boolean b)
         {
             try
             {
@@ -108,10 +108,10 @@ public class My_Fast_IO
     }
     public static void main(String[] args) 
     {
-        // FastReader(true)         for File I/O
-        // FastReader()             for terminal I/O    
+        // RohanReader(true)         for File I/O
+        // RohanReader()             for terminal I/O    
 
-        FastReader sc=new FastReader(true); 
+        RohanReader sc=new RohanReader(true); 
 
         //CODE BEGIN
 
