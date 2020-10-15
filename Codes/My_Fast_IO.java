@@ -9,17 +9,20 @@ public class My_Fast_IO
     static class FastReader 
     { 
         BufferedReader br; 
-        StringTokenizer st; 
+        StringTokenizer st;
+        PrintWriter pw;
   
         public FastReader() 
         { 
             br = new BufferedReader(new
-                     InputStreamReader(System.in)); 
+                     InputStreamReader(System.in));
+            pw = new PrintWriter(new OutputStreamWriter(System.out))
         }
         public FastReader(boolean b)
         {
-            br = new BufferedReader(new
-                     InputStreamReader(System.in));
+            br = new BufferedReader( new FileReader("input.txt")); 
+            pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
+
         }
         String next() 
         { 
@@ -64,11 +67,17 @@ public class My_Fast_IO
                 e.printStackTrace(); 
             } 
             return str; 
-        } 
+        }
+        void closer()
+        {
+            br.close();
+            pw.flush();
+            pw.close();
+        }
     }
     public static void main(String[] args) 
     {
-        PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
+        //PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
         FastReader s=new FastReader(); 
         //CODE BEGIN
 
@@ -78,6 +87,6 @@ public class My_Fast_IO
         //CODE END
 
         // o.flush() if the output needs to be flushed
-        out.close();
+        s.closer();
     } 
 }
