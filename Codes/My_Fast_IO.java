@@ -60,16 +60,18 @@ public class My_Fast_IO
             } 
             return str; 
         } 
-    } 
+    }
     public static void main(String[] args) 
     {
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
         FastReader s=new FastReader(); 
-        // CODE BEGIN
-        int n = s.nextInt();
-        out.println(n);
+        //CODE BEGIN
+
+        
+
 
         //CODE END
+
         // o.flush() if the output needs to be flushed
         out.close();
     } 
