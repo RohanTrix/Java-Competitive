@@ -16,7 +16,11 @@ public class My_Fast_IO
             br = new BufferedReader(new
                      InputStreamReader(System.in)); 
         }
-        public FastReader(String s)
+        public FastReader(boolean b)
+        {
+            br = new BufferedReader(new
+                     InputStreamReader(System.in));
+        }
         String next() 
         { 
             while (st == null || !st.hasMoreElements()) 
