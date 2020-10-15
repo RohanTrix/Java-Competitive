@@ -3,7 +3,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;  
 import java.util.StringTokenizer;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;  
+import java.io.PrintWriter;
+import java.io.*; 
 public class My_Fast_IO 
 { 
     static class FastReader 
@@ -16,12 +17,19 @@ public class My_Fast_IO
         { 
             br = new BufferedReader(new
                      InputStreamReader(System.in));
-            pw = new PrintWriter(new OutputStreamWriter(System.out))
+            pw = new PrintWriter(new OutputStreamWriter(System.out));
         }
         public FastReader(boolean b)
         {
-            br = new BufferedReader( new FileReader("input.txt")); 
-            pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
+            try
+            {
+                br = new BufferedReader( new FileReader("input.txt")); 
+                pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
+            }
+            catch(Exception e)
+            {
+
+            }
 
         }
         String next() 
@@ -37,7 +45,7 @@ public class My_Fast_IO
                     e.printStackTrace(); 
                 } 
             } 
-            return st.nextToken(); 
+            return st.nextToken();
         } 
   
         int nextInt() 
@@ -68,11 +76,34 @@ public class My_Fast_IO
             } 
             return str; 
         }
+        void print(Object...objects) {
+            for (int i = 0; i < objects.length; i++) {
+                if (i != 0)
+                    pw.print(' ');
+            pw.print(objects[i]);
+            }
+        }
+        void println(Object...objects)
+        {
+            for (int i = 0; i < objects.length; i++) {
+                if (i != 0)
+                    pw.print(' ');
+            pw.print(objects[i]);
+            }
+            pw.println();
+        }
         void closer()
         {
+            try{
             br.close();
             pw.flush();
             pw.close();
+            }
+            catch(Exception e)
+            {
+
+            }
+        
         }
     }
     public static void main(String[] args) 
