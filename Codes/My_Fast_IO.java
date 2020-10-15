@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.io.*; 
+import java.io.FileReader;
 public class My_Fast_IO 
 { 
     static class FastReader 
@@ -24,7 +24,8 @@ public class My_Fast_IO
             try
             {
                 br = new BufferedReader( new FileReader("input.txt")); 
-                pw = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
+                pw = new PrintWriter("output.txt");
+            
             }
             catch(Exception e)
             {
@@ -101,15 +102,17 @@ public class My_Fast_IO
             }
             catch(Exception e)
             {
-
             }
         
         }
     }
     public static void main(String[] args) 
     {
-        //PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
-        FastReader s=new FastReader(); 
+        // FastReader(true)         for File I/O
+        // FastReader()             for terminal I/O    
+
+        FastReader sc=new FastReader(true); 
+
         //CODE BEGIN
 
         
@@ -117,7 +120,7 @@ public class My_Fast_IO
 
         //CODE END
 
-        // o.flush() if the output needs to be flushed
-        s.closer();
+        // sc.flush() if the output needs to be flushed
+        sc.closer();
     } 
 }
