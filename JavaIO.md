@@ -15,3 +15,4 @@ A program that needs to read data from some source needs an `OutputStream` or a 
 ##  Java IO Classes Overview
 
 ![](images/java-io-summary-table.PNG)
+
