@@ -14,7 +14,7 @@ public class Iterators
   
         // at beginning itr(cursor) will point to 
         // index just before the first element in al 
-        Iterator itr = al.iterator(); 
+        Iterator<Integer> itr = al.iterator(); 
   
         // checking the next element availabilty 
         while (itr.hasNext()) 
