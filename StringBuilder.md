@@ -11,7 +11,6 @@ StringBuilder objects are like String objects, except that they can be modified.
 |  `StringBuilder(String s)`	|  Creates a string builder whose value is initialized by the specified string, plus an extra 16 empty elements trailing the string. |
 
 ## Various StringBuilder Methods
-
 <table>
 <thead>
   <tr>
@@ -25,7 +24,7 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td rowspan="10">Appends the argument to this string builder. <br>The data is converted to a string before the append operation takes place.<br></td>
   </tr>
   <tr>
-    <td> StringBuilder append(char c) </td>
+    <td>StringBuilder append(char c)</td>
   </tr>
   <tr>
     <td>StringBuilder append(char[] str)</td>
@@ -90,11 +89,16 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td>StringBuilder insert(int offset, String s)</td>
   </tr>
   <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>StringBuilder replace(int start, int end, String s)</td>
-    <td rowspan="2">Replaces the specified character(s) in this string builder.</td>
+    <td>Replaces the specified character(s) in this string builder.</td>
   </tr>
   <tr>
     <td>void setCharAt(int index, char c)</td>
+    <td></td>
   </tr>
   <tr>
     <td>StringBuilder reverse()</td>
