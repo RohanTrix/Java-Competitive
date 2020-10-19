@@ -22,7 +22,7 @@ StringBuilder objects are like String objects, except that they can be modified.
 <tbody>
   <tr>
     <td>StringBuilder append(boolean b)<br></td>
-    <td rowspan="10">Appends the argument to this string builder. <br> The data is converted to a string before the append operation takes place.</td>
+    <td rowspan="10">Appends the argument to this string builder. <br>The data is converted to a string before the append operation takes place.<br></td>
   </tr>
   <tr>
     <td>StringBuilder append(char c)</td>
@@ -53,14 +53,14 @@ StringBuilder objects are like String objects, except that they can be modified.
   </tr>
   <tr>
     <td>StringBuilder delete(int start, int end)</td>
-    <td rowspan="2">The first method deletes the subsequence from start to end-1 (inclusive) in the StringBuilder's char sequence. &lt;br&gt; The second method deletes the character located at index.</td>
+    <td rowspan="2">The first method deletes the subsequence from start to end-1 (inclusive) in the StringBuilder's char sequence. <br>The second method deletes the character located at index.</td>
   </tr>
   <tr>
     <td>StringBuilder deleteCharAt(int index)</td>
   </tr>
   <tr>
     <td>StringBuilder insert(int offset, boolean b)</td>
-    <td rowspan="10">Inserts the second argument into the string builder. &lt;br&gt; The first integer argument indicates the index before which the data is to be inserted. &lt;br&gt; The data is converted to a string before the insert operation takes place.</td>
+    <td rowspan="10">Inserts the second argument into the string builder. <br> The first integer argument indicates the index before which the data is to be inserted.<br> The data is converted to a string before the insert operation takes place.</td>
   </tr>
   <tr>
     <td>StringBuilder insert(int offset, char c)</td>
