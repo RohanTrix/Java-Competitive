@@ -15,7 +15,8 @@ StringBuilder objects are like String objects, except that they can be modified.
 
 |     Method |          Description  |
 |------------------|----------------------|
-|  StringBuilder append(boolean b) <br>
+| 
+StringBuilder append(boolean b) <br>
 StringBuilder append(char c) <br>
 StringBuilder append(char[] str) <br>
 StringBuilder append(char[] str, int offset, int len) <br>
@@ -24,7 +25,7 @@ StringBuilder append(float f) <br>
 StringBuilder append(int i) <br>
 StringBuilder append(long lng) <br>
 StringBuilder append(Object obj) <br>
-StringBuilder append(String s) |      ff  |
+StringBuilder append(String s) <br|      ff  |
 |  `StringBuilder(CharSequence cs)` |     Constructs a string builder containing the same characters as the specified CharSequence, plus an extra 16 empty elements trailing the CharSequence. |
 |  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
 |  `StringBuilder(String s)`	|  Creates a string builder whose value is initialized by the specified string, plus an extra 16 empty elements trailing the string. |
