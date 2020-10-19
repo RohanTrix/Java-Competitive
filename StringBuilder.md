@@ -104,6 +104,10 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td>String toString()</td>
     <td>Returns a string that contains the character sequence in the builder.</td>
   </tr>
+  <tr>
+    <td>int length()</td>
+    <td>Returns the length of the characters in the String</td>
+  </tr>
 </tbody>
 </table>
 
