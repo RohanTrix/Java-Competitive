@@ -52,16 +52,60 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td>StringBuilder append(String s)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>StringBuilder delete(int start, int end)</td>
+    <td rowspan="2">The first method deletes the subsequence from start to end-1 (inclusive) in the StringBuilder's char sequence. &lt;br&gt; The second method deletes the character located at index.</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>StringBuilder deleteCharAt(int index)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>StringBuilder insert(int offset, boolean b)</td>
+    <td rowspan="10">Inserts the second argument into the string builder. &lt;br&gt; The first integer argument indicates the index before which the data is to be inserted. &lt;br&gt; The data is converted to a string before the insert operation takes place.</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, char c)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, char[] str)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int index, char[] str, int offset, int len)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, double d)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, float f)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, int i)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, long lng)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, Object obj)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder insert(int offset, String s)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder replace(int start, int end, String s)</td>
+    <td rowspan="2">Replaces the specified character(s) in this string builder.</td>
+  </tr>
+  <tr>
+    <td>void setCharAt(int index, char c)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder reverse()</td>
+    <td>Reverses the sequence of characters in this string builder.</td>
+  </tr>
+  <tr>
+    <td>String toString()</td>
+    <td>Returns a string that contains the character sequence in the builder.</td>
   </tr>
 </tbody>
 </table>
+
+### **Note**: 
+You can use any String method on a StringBuilder object by first converting the string builder to a string with the toString() method of the StringBuilder class. Then convert the string back into a string builder using the StringBuilder(String str) constructor.
