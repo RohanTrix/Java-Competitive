@@ -16,8 +16,8 @@ StringBuilder objects are like String objects, except that they can be modified.
 
 |     Constructor |    Description         |
 |-----------------|----------------------|
-| * StringBuilder append(boolean b)
-* StringBuilder append(char c)
+| * StringBuilder append(boolean b) 
+* StringBuilder append(char c) |
 * StringBuilder append(char[] str) |
 * StringBuilder append(char[] str, int offset, int len) |
 * StringBuilder append(double d) |
