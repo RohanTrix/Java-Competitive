@@ -16,16 +16,56 @@ StringBuilder objects are like String objects, except that they can be modified.
 |     Method |          Description  |
 |------------------|----------------------|
 | 
-StringBuilder append(boolean b) <br> |
-StringBuilder append(char c) <br>
-StringBuilder append(char[] str) <br>
-StringBuilder append(char[] str, int offset, int len) <br>
-StringBuilder append(double d) <br>
-StringBuilder append(float f) <br>
-StringBuilder append(int i) <br>
-StringBuilder append(long lng) <br>
-StringBuilder append(Object obj) <br>
-StringBuilder append(String s) |      ff  |
-|  `StringBuilder(CharSequence cs)` |     Constructs a string builder containing the same characters as the specified CharSequence, plus an extra 16 empty elements trailing the CharSequence. |
-|  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
-|  `StringBuilder(String s)`	|  Creates a string builder whose value is initialized by the specified string, plus an extra 16 empty elements trailing the string. |
+<table>
+<thead>
+  <tr>
+    <th>Abbreviation</th>
+    <th>Meaning</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>StringBuilder append(boolean b)<br></td>
+    <td rowspan="10">Appends the argument to this string builder. The data is converted to a string before the append operation takes place.</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(char c)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(char[] str)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(char[] str, int offset, int len)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(double d)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(float f)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(int i)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(long lng)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(Object obj)</td>
+  </tr>
+  <tr>
+    <td>StringBuilder append(String s)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
