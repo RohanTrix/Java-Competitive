@@ -13,8 +13,8 @@ StringBuilder objects are like String objects, except that they can be modified.
 ## Various StringBuilder Methods
 
 
-|     Method |          Description                    |
-|----------------------------|------------------------------------|
+|     Method |          Description  |
+|------------------|----------------------|
 |   |        |
 |  `StringBuilder(CharSequence cs)` |     Constructs a string builder containing the same characters as the specified CharSequence, plus an extra 16 empty elements trailing the CharSequence. |
 |  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
