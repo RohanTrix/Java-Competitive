@@ -25,7 +25,7 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td rowspan="10">Appends the argument to this string builder. <br>The data is converted to a string before the append operation takes place.<br></td>
   </tr>
   <tr>
-    <td> <embed>StringBuilder append(char c)</td>
+    <td> StringBuilder append(char c) </td>
   </tr>
   <tr>
     <td>StringBuilder append(char[] str)</td>
