@@ -12,15 +12,11 @@ StringBuilder objects are like String objects, except that they can be modified.
 
 ## Various StringBuilder Methods
 
-
-|     Method |          Description  |
-|------------------|----------------------|
-| 
 <table>
 <thead>
   <tr>
-    <th>Abbreviation</th>
-    <th>Meaning</th>
+    <th>Method</th>
+    <th>Description</th>
   </tr>
 </thead>
 <tbody>
