@@ -108,6 +108,15 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td>int length()</td>
     <td>Returns the length of the characters in the String</td>
   </tr>
+  <tr>
+    <td>char charAt()</td>
+    <td>Returns the char value in this sequence at the specified index.</td>
+  </tr>
+  <tr>
+    <td>int indexOf(String str)</td>
+    <td>Returns the index within this string of the first occurrence of the specified substring.
+</td>
+  </tr> 
 </tbody>
 </table>
 
