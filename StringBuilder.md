@@ -15,14 +15,14 @@ StringBuilder objects are like String objects, except that they can be modified.
 <table>
 <thead>
   <tr>
-    <th>Method</th>
-    <th>Description</th>
+    <th>Abbreviation</th>
+    <th>Meaning</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>StringBuilder append(boolean b)<br></td>
-    <td rowspan="10">Appends the argument to this string builder. The data is converted to a string before the append operation takes place.</td>
+    <td rowspan="10">Appends the argument to this string builder.<br> The data is converted to a string before the append operation takes place.</td>
   </tr>
   <tr>
     <td>StringBuilder append(char c)</td>
