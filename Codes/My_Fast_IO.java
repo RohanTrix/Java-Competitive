@@ -6,7 +6,24 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.FileReader;
 public class My_Fast_IO 
-{ 
+{
+    static void solve(FastReader sc)
+    {
+        
+
+
+        
+    }
+    public static void main(String[] args) 
+    {
+        // FastReader(true)         for File I/O
+        // FastReader()             for terminal I/O    
+        FastReader sc=new FastReader(true); 
+        //CODE BEGIN
+        for(int T = sc.nextInt();T > 0;T--)solve(sc);
+        //CODE END
+        sc.closer();
+    } 
     static class FastReader 
     { 
         BufferedReader br; 
@@ -106,21 +123,4 @@ public class My_Fast_IO
         
         }
     }
-    public static void main(String[] args) 
-    {
-        // FastReader(true)         for File I/O
-        // FastReader()             for terminal I/O    
-
-        FastReader sc=new FastReader(true); 
-
-        //CODE BEGIN
-
-        
-
-
-        //CODE END
-
-        // sc.flush() if the output needs to be flushed
-        sc.closer();
-    } 
 }
