@@ -13,7 +13,7 @@ Resizable-array implementation of the `Deque` interface. Null elements are prohi
 |  `ArrayDeque(int numElements)`	|  Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
 
 
-Methods in 
+## Methods in ArrayDeque class
 <table>
 <thead>
   <tr>

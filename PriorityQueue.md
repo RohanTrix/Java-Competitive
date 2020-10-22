@@ -17,6 +17,8 @@ A PriorityQueue is used when the objects are supposed to be processed based on t
 
 **NOTE** : By default, PriorityQueue implements MinHeap. To implement MaxHeap, send `Collections.reverseOrder()` ( Comparator) to the PriorityQueue constructor.
 
+## Methods in PriorityQueue
+
 <table>
 <thead>
   <tr>
