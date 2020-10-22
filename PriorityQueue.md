@@ -11,5 +11,8 @@ A PriorityQueue is used when the objects are supposed to be processed based on t
 * It provides O(log(n)) time for add and poll methods.
 
 # Constructors
- * ## PriorityQueue<E> pq = new PriorityQueue<E>();
- * PriorityQueue<E> pq = new PriorityQueue<E>(int initialCapacity);
+ * ### PriorityQueue<E> pq = new PriorityQueue<E>();
+ * ### PriorityQueue<E> pq = new PriorityQueue<E>(int initialCapacity);
+ * ### PriorityQueue<E> pq = new PriorityQueue<E>(Collection<E> c);
+
+
