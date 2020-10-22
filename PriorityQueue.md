@@ -15,4 +15,4 @@ A PriorityQueue is used when the objects are supposed to be processed based on t
  * ### PriorityQueue<E> pq = new PriorityQueue<E>(int initialCapacity);
  * ### PriorityQueue<E> pq = new PriorityQueue<E>(Collection<E> c);
 
-
+**NOTE** : By default, PriorityQueue implements MinHeap. To implement MaxHeap, 
