@@ -9,3 +9,7 @@ A PriorityQueue is used when the objects are supposed to be processed based on t
 * We can’t create PriorityQueue of Objects that are non-comparable
 * The head of this queue is the least element with respect to the specified ordering.
 * It provides O(log(n)) time for add and poll methods.
+
+# Constructors
+ * ## PriorityQueue<E> pq = new PriorityQueue<E>();
+ * PriorityQueue<E> pq = new PriorityQueue<E>(int initialCapacity);
