@@ -16,3 +16,34 @@ A PriorityQueue is used when the objects are supposed to be processed based on t
  * ### PriorityQueue<E> pq = new PriorityQueue<E>(Collection<E> c);
 
 **NOTE** : By default, PriorityQueue implements MinHeap. To implement MaxHeap, send `Collections.reverseOrder()` ( Comparator) to the PriorityQueue constructor.
+
+<table>
+<thead>
+  <tr>
+    <th>Method</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>public boolean add(E e)</td>
+    <td>Inserts the specified element into this priority queue.</td>
+  </tr>
+  <tr>
+    <td>public E peek()</td>
+    <td>Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.</td>
+  </tr>
+  <tr>
+    <td>public boolean contains(Object o)</td>
+    <td>Returns true if this queue contains the specified element. <br>More formally, returns true if and only if this queue contains at least one element e <br>such that o.equals(e).</td>
+  </tr>
+  <tr>
+    <td>public E poll()</td>
+    <td>Retrieves and removes the head of this queue, or returns null if this queue is empty.</td>
+  </tr>
+  <tr>
+    <td>public int size()</td>
+    <td>Returns the number of elements in this collection. If this collection contains more than Integer.MAX_VALUE elements, returns Integer.MAX_VALUE.</td>
+  </tr>
+</tbody>
+</table>

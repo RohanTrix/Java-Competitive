@@ -12,6 +12,8 @@ Resizable-array implementation of the `Deque` interface. Null elements are prohi
 |  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
 |  `ArrayDeque(int numElements)`	|  Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
 
+
+Methods in 
 <table>
 <thead>
   <tr>
