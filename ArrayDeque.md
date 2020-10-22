@@ -6,6 +6,7 @@ Resizable-array implementation of the `Deque` interface. Null elements are prohi
 |     Constructor |         Description                    |
 |----------------------------|------------------------------------|
 |     `ArrayDeque()`	       |   Constructs an empty array deque with an initial capacity sufficient to hold 16 elements.  |
-|  `ArrayDeque(Collection<? extends E> c)` |     Constructs a string builder containing the same characters as the specified CharSequence, plus an extra 16 empty elements trailing the CharSequence. |
+|  `ArrayDeque(Collection<? extends E> c)` |     Constructs a deque containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
 |  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
-|  `StringBuilder(String s)`	|  Creates a string builder whose value is initialized by the specified string, plus an extra 16 empty elements trailing the string. |
+|  `ArrayDeque(int numElements)`	|  Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
+
