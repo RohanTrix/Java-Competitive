@@ -1,6 +1,8 @@
 # ArrayDeque
 Resizable-array implementation of the `Deque` interface. Null elements are prohibited. This class is likely to be faster than Stack when used as a stack, and faster than LinkedList when used as a queue.
 
+![](images/java-arraydeque-class.png)
+
 ## Constructor
 
 |     Constructor |         Description                    |

@@ -48,13 +48,5 @@ StringBuilder objects are like String objects, except that they can be modified.
     <td>public int size()</td>
     <td>Returns the number of elements in this deque.</td>
   </tr>
-  <tr>
-    <td>public boolean isEmpty()</td>
-    <td>Returns true if this deque contains no elements.</td>
-  </tr>
-  <tr>
-    <td>public void clear()</td>
-    <td>Removes all of the elements from this deque. The deque will be empty after this call returns.</td>
-  </tr>
 </tbody>
 </table>
