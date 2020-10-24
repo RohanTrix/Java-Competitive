@@ -19,3 +19,33 @@ This class implements the Set interface, backed by a hash table (actually a Hash
 
 ## Methods
 
+<table>
+<thead>
+  <tr>
+    <th>Constructor</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>public boolean add(E e)</td>
+    <td>Adds the specified element to this set if it is not already present.</td>
+  </tr>
+  <tr>
+    <td>public boolean remove(Object o)</td>
+    <td>Removes the specified element from this set if it is present.</td>
+  </tr>
+  <tr>
+    <td>public boolean contains(Object o)</td>
+    <td>Returns true if this set contains the specified element.</td>
+  </tr>
+  <tr>
+    <td>public boolean isEmpty()</td>
+    <td>Returns true if this set contains no elements.</td>
+  </tr>
+  <tr>
+    <td>public int size()</td>
+    <td>Returns the number of elements in this set (its cardinality).</td>
+  </tr>
+</tbody>
+</table>
