@@ -13,7 +13,9 @@ This class implements the Set interface, backed by a hash table (actually a Hash
 
 |     Constructor |         Description                    |
 |----------------------------|------------------------------------|
-|     `HashSet<E> hs = new HashSet<E>();` | Constructs a new, empty set; the backing HashMap instance has default initial capacity (16) and load factor (0.75) |
+|  `HashSet<E> hs = new HashSet<E>();` | Constructs a new, empty set; the backing HashMap instance has default initial capacity (16) and load factor (0.75) |
 |  `HashSet<E> hs = new HashSet<E>(Collection C);` |     Constructs a new set containing the elements in the specified collection. |
-|  `HashSet<E> hs = new HashSet<E>(int initialCapacity);` |     Creates an empty string builder with the specified initial capacity. |
-|  `ArrayDeque(int numElements)`	|  Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
+|  `HashSet<E> hs = new HashSet<E>(int initialCapacity);` |     Constructs a new, empty set; the backing HashMap instance has the specified initial capacity and default load factor (0.75). |
+
+## Methods
+
