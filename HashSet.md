@@ -11,3 +11,9 @@ This class implements the Set interface, backed by a hash table (actually a Hash
 
 ## Constructor
 
+|     Constructor |         Description                    |
+|----------------------------|------------------------------------|
+|     `HashSet<E> hs = new HashSet<E>();` |   Constructs an empty array deque with an initial capacity sufficient to hold 16 elements. |
+|  `ArrayDeque(Collection<? extends E> c)` |     Constructs a deque containing the elements of the specified collection, in the order they are returned by the collection's iterator. |
+|  `StringBuilder(int initCapacity)`	 |     Creates an empty string builder with the specified initial capacity. |
+|  `ArrayDeque(int numElements)`	|  Constructs an empty array deque with an initial capacity sufficient to hold the specified number of elements. |
