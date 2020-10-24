@@ -1,15 +1,17 @@
-
 import java.util.*;
 public class Graph {
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
-  boolean visited
+  public static Set<Integer> visited = new HashSet<Integer>();
   void dfs(int v)
   {
-    if 
+    if(visited.contains(v))
+      return;
+    visited.add(v);
+    for(int u : edges.get(v))
+    {
+      dfs(u);
+    }
   }
-  
-  
-  
   public void addNode(int u) {
     if (!edges.containsKey(u)) {
       edges.put(u, new TreeSet<Integer>());
@@ -39,15 +41,18 @@ public class Graph {
   // Usage example
   public static void main(String[] args) {
     Graph g = new Graph();
-    g.addEdge(0, 1);
-    g.addEdge(1, 2);
-    System.out.println(g.edges);
-    g.removeEdge(1, 0);
-    System.out.println(g.edges);
-    g.removeNode(1);
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of nodes: ");
+    int n = sc.nextInt();
+    for(int i =0; i< n;i++)
+    {
+      g.addEdge(sc.nextInt(), sc.nextInt());
+    }
+    g.dfs(1);
     System.out.println(g.edges);
   }
 }
+
 class Pair < X, Y > { // utilizing Java "Generics"
   X x;
   Y y;
