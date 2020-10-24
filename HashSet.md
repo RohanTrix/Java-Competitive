@@ -9,3 +9,5 @@ This class implements the Set interface, backed by a hash table (actually a Hash
 
 ![](images/11.png)
 
+## Constructor
+
