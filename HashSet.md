@@ -6,3 +6,6 @@ This class implements the Set interface, backed by a hash table (actually a Hash
 2. Duplicates are not allowed.
 3. Allows a null value to be present.
 4. HashSet is non-synchronized, can be synchronized explicitly.
+
+![](images/11.png)
+
