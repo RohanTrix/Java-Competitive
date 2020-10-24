@@ -2,13 +2,19 @@
 import java.util.*;
 public class Graph {
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
-
+  boolean visited
+  void dfs(int v)
+  {
+    if 
+  }
+  
+  
+  
   public void addNode(int u) {
     if (!edges.containsKey(u)) {
       edges.put(u, new TreeSet<Integer>());
     }
   }
-
   public void removeNode(int u) {
     if (!edges.containsKey(u)) {
       return;
@@ -18,7 +24,6 @@ public class Graph {
     }
     edges.remove(u);
   }
-
   public void addEdge(int u, int v) {
     addNode(u);
     addNode(v);
