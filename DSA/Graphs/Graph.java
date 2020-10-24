@@ -1,7 +1,45 @@
 import java.util.*;
 public class Graph {
+  // Adjaceny List
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
+  // Visited Set
   public static Set<Integer> visited = new HashSet<Integer>();
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of edges: ");
+    int n = sc.nextInt();
+    Graph g = new Graph();
+    for(int i =0; i< n;i++)
+    {
+      g.addEdge(sc.nextInt(), sc.nextInt());
+    }
+    g.bfs(1);
+    System.out.println(g.edges);
+  }
+  void bfs(int v)
+  {
+    Queue<Integer> q = new LinkedList<>();
+    int distance[] = new int[edges.size()+1];
+
+
+    visited.add(v);
+    distance[v] = 0;
+    q.add(v);
+    while(q.size()!=0)
+    {
+      int s = q.poll();
+      // Process node s
+      for( int u : edges.get(s))
+      {
+        if(visited.contains(u))
+          continue;
+        visited.add(u);
+        distance[u] = distance[s] + 1;
+        q.add(u);
+      }
+    }
+  }
   void dfs(int v)
   {
     if(visited.contains(v))
@@ -37,22 +75,7 @@ public class Graph {
     edges.get(u).remove(v);
     edges.get(v).remove(u);
   }
-
-  // Usage example
-  public static void main(String[] args) {
-    Graph g = new Graph();
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the number of nodes: ");
-    int n = sc.nextInt();
-    for(int i =0; i< n;i++)
-    {
-      g.addEdge(sc.nextInt(), sc.nextInt());
-    }
-    g.dfs(1);
-    System.out.println(g.edges);
-  }
 }
-
 class Pair < X, Y > { // utilizing Java "Generics"
   X x;
   Y y;
