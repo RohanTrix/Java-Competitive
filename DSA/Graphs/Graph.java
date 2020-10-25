@@ -39,6 +39,7 @@ public class Graph {
         q.add(u);
       }
     }
+    //System.out.println( Arrays.toString(distance));
   }
   void dfs(int v)
   {
