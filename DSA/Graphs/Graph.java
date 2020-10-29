@@ -14,6 +14,7 @@ public class Graph {
     {
       g.addEdge(sc.nextInt(), sc.nextInt());
     }
+    g.dfs(1);
     g.bfs(1);
     System.out.println(g.edges);
   }
