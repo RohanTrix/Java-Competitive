@@ -18,3 +18,8 @@ The **time complexity** of depth-first search is `O(n + m)` where n is the numbe
     been visited.
     > NOTE: Another way to determine if a graph contains a cycle is to simply calculate the number of nodes and edges in every component. If a component contains c nodes and no cycle, it must contain exactly c − 1 edges (so it has to be a tree). If there are c or more edges, the component surely contains a cycle.
 
+* ### Bipartiteness Check
+    A graph is bipartite if its nodes can be colored using two colors so that there are no adjacent nodes with the same color. The idea is to pick two colors `X` and `Y` , color the starting node `X`, all its neighbors `Y` , all their neighbors `X`, and so on. If at some point of the search we notice that two adjacent nodes have the same color, this means that the graph is not bipartite. Otherwise, the graph is bipartite and one coloring has been found.
+
+* ### SSSP(Single Source Shortest Path)
+    For a tree, graph traversal can find the shortest part from a node A to B.
