@@ -17,6 +17,7 @@ public class Graph {
     g.dfs(1);
     g.bfs(1);
     System.out.println(g.edges);
+    sc.close();
   }
   void bfs(int v)
   {
