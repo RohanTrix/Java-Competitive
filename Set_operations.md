@@ -10,4 +10,6 @@ Method ` retainAll` modifies the set directly, keeps the values that are both in
 ```java
     set1.addAll(set22);
 ```
-Method `addAll` adds all the members of the supplied set to the other.
+Method `addAll` adds all the members of set2 to the set1 (modifying set1).
+
+## 3. 
