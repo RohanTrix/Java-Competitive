@@ -2,6 +2,6 @@
 
 ## 1. Intersection
 ```java
-    Set<Integer> intersectSet = new HashSet<>(setA);
-    intersectSet.retainAll(setB);
+    set1.retainAll(set2);
 ```
+` retainAll` modifies the set directly 
