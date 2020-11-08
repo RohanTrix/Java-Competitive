@@ -8,4 +8,6 @@ Method ` retainAll` modifies the set directly, keeps the values that are both in
 
 ## 2. Union
 ```java
-    
+    set1.addAll(set22);
+```
+Method `addAll` adds all the members of the supplied set to the other.
