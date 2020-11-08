@@ -16,4 +16,4 @@ Method `addAll` adds all the members of set2 to the set1 (modifying set1).
 ```java
     set1.removeAll(set2);
 ```
-
+Method `removeAll` keeps values that are in setA that don't exist in setB.
