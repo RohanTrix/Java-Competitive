@@ -4,3 +4,5 @@ An important class of graphs is directed acyclic graphs, also called **DAGs**. A
 contains a cycle, it is not possible to form a topological sort, because no node of the
 cycle can appear before the other nodes of the cycle in the ordering. 
 It turns out that depth-first search can be used to both check if a directed graph contains a cycle and, if it does not, to construct a topological sort.
+
+![](ima)
