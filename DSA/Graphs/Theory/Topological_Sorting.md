@@ -11,3 +11,13 @@ It turns out that DFS can be used to both check if a directed graph contains a c
 ![](imgs/TopSort.JPG)
 
 Algorithm: 
+
+1. Pick an unvisited node
+2. Perform DFS on it while exploring unvisited nodes.
+3. As soon as a DFS of a node is over( it is explored), add that node to a Stack called explored.
+4. The top to bottom order of the stack is the topological ordering.
+
+**NOTE:**
+
+- Topological Sort can find a topological ordering in O( V+E ) time!
+- Topological Orderings are **NOT** unique
