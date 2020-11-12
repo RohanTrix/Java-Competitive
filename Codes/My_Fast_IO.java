@@ -80,13 +80,6 @@ public class My_Fast_IO
         { 
             return Double.parseDouble(next()); 
         } 
-        int[] nextIntArray(int num)
-        {
-            int arr[] = new int[num];
-            for(int i=0;i<num;i++)
-            arr[i] = Integer.parseInt(next());
-            return arr;
-        }
         String nextLine() 
         { 
             String str = ""; 
@@ -99,6 +92,20 @@ public class My_Fast_IO
                 e.printStackTrace(); 
             } 
             return str; 
+        }
+        int[] nextIntArray(int num)
+        {
+            int arr[] = new int[num];
+            for(int i=0;i<num;i++)
+            arr[i] = Integer.parseInt(next());
+            return arr;
+        }
+        long[] nextLongArray(int num)
+        {
+            long arr[] = new long[num];
+            for(int i=0;i<num;i++)
+            arr[i] = Long.parseLong(next());
+            return arr;
         }
         void print(Object...objects) {
             for (int i = 0; i < objects.length; i++) {
