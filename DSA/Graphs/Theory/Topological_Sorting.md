@@ -5,4 +5,4 @@ contains a cycle, it is not possible to form a topological sort, because no node
 cycle can appear before the other nodes of the cycle in the ordering. 
 It turns out that depth-first search can be used to both check if a directed graph contains a cycle and, if it does not, to construct a topological sort.
 
-![](ima)
+![](imgs/TopSort.JPG)
