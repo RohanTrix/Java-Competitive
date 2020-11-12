@@ -9,3 +9,5 @@ cycle can appear before the other nodes of the cycle in the ordering.
 It turns out that DFS can be used to both check if a directed graph contains a cycle and, if it does not, to construct a topological sort.
 
 ![](imgs/TopSort.JPG)
+
+Algorithm: 
