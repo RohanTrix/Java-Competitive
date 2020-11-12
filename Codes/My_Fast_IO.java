@@ -80,7 +80,13 @@ public class My_Fast_IO
         { 
             return Double.parseDouble(next()); 
         } 
-  
+        int[] nextIntArray(int num)
+        {
+            int arr[] = new int[num];
+            for(int i=0;i<num;i++)
+            arr[i] = Integer.parseInt(next());
+            return arr;
+        }
         String nextLine() 
         { 
             String str = ""; 

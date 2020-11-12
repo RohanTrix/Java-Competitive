@@ -18,7 +18,7 @@ public class Graph {
     g.bfs(1);
     System.out.println(g.edges);
     sc.close();
-  }
+  } 
   void bfs(int v)
   {
     Queue<Integer> q = new LinkedList<>();
