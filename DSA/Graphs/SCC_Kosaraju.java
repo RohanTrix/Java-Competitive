@@ -1,7 +1,7 @@
 package Graphs;
 import java.util.*;
 import java.io.*;
-public class StronglyConnected {
+public class SCC_Kosaraju {
   // Adjaceny List
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
   // Visited Set
@@ -15,8 +15,8 @@ public class StronglyConnected {
     int n = sc.nextInt();
     System.out.println("Enter the number of edges:");
     int m = sc.nextInt();
-    StronglyConnected g = new StronglyConnected();
-    StronglyConnected rev_g = new StronglyConnected();
+    SCC_Kosaraju g = new SCC_Kosaraju();
+    SCC_Kosaraju rev_g = new SCC_Kosaraju();
     for(int i =1; i<=n;i++)
     {
       g.addNode(i);
