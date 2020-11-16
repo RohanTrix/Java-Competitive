@@ -1,4 +1,5 @@
 package Graphs;
+import java.util.*;
 public class DSU 
 {
     public static int parent[];
@@ -32,7 +33,7 @@ public class DSU
             else
             {
                 parent[s2] = s1;
-                rank[s1] += rank[s2]   
+                rank[s1] += rank[s2]; 
             }
         }
     }
