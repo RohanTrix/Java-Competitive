@@ -13,7 +13,8 @@ public class DSU
         {
             return i;
         }
-        return find(parent[i]);
+        parent[i] = find(parent[i]);
+        return parent[i];
     }
     public void union(int a, int b)
     {
