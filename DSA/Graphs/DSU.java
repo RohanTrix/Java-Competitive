@@ -24,12 +24,12 @@ public class DSU
         int s2 = find(b);
         if( s1!= s2)
         {
-            if( rank[s1] > rank[s2] )
+            if( rank[s1] < rank[s2] )
             {
-                
+                parent[s1] = s2;
+                rank[s2] = rank[s1]
+
             }
-            parent[s2] = s1;
-            rank[s2]
         }
     }
 }
