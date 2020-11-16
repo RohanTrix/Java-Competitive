@@ -7,6 +7,7 @@ public class DSU
     {
         parent = new int[num];
         rank = new int[num];
+        Arrays.fill(rank,1);
     }
     public int find( int i)
     {
@@ -24,6 +25,7 @@ public class DSU
         if( s1!= s2)
         {
             parent[s2] = s1;
+            rank[s]
         }
     }
 }
