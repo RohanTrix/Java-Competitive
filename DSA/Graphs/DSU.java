@@ -24,8 +24,9 @@ public class DSU
         int s2 = find(b);
         if( s1!= s2)
         {
+            int maxi = Math.max(rank[s1],rank[s2]);
             parent[s2] = s1;
-            rank[s]
+            rank[s2]
         }
     }
 }
