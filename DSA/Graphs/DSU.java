@@ -13,7 +13,7 @@ public class DSU
         {
             return i;
         }
-        parent[i] = find(parent[i]);
+        parent[i] = find(parent[i]); // Path Compression
         return parent[i];
     }
     public void union(int a, int b)
