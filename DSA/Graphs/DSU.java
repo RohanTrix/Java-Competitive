@@ -18,6 +18,10 @@ public class DSU
     public void union(int a, int b)
     {
         int s1 = find(a);
-        int 
+        int s2 = find(b);
+        if( s1!= s2)
+        {
+            parent[s2] = s1;
+        }
     }
 }
