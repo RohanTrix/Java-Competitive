@@ -22,14 +22,18 @@ public class Topsort {
     {
       g.addEdge(sc.nextInt(), sc.nextInt());
     }
-    for(int i =1; i<=n;i++)
-    {
-        if(!visited.contains(i))
-        g.dfs(i);
-    }
+    g.topsort(n);
     for(int i: stack)
     System.out.print(i+" ");
     sc.close();
+  }
+  void topsort(int n)
+  {
+    for(int i =1; i<=n;i++)
+    {
+        if(!visited.contains(i))
+        dfs(i);
+    }
   }
   void dfs(int v)
   {
