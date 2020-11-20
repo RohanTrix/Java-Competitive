@@ -27,10 +27,13 @@ public class Dijkstra_lazy {
       g.addEdge(sc.nextInt(), sc.nextInt(), sc.nextLong());
     System.out.println("Enter the starting node:");
     int s = sc.nextInt();
-    Long sssp[] = g.dijkstra_lazy(n,s);
+    //Long distArray[] = g.dijkstra_lazy(n,s);
+    //System.out.println("Distance Array: " + Arrays.toString(distArray));
 
-    System.out.println("Distance Array: " + Arrays.toString(sssp));
-    System.out.println("Shortest Path Array: " + Arrays.toString(prev));
+    int e = n; // taking the ending node for the path to be nth Node(last node)
+
+    System.out.println("Shortest Path Array: \n");
+    g.findShortestPath(n, s, e);
     //System.out.println(g.edges);
     sc.close();
   }
@@ -72,7 +75,21 @@ public class Dijkstra_lazy {
       }
     return dist;
     }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    void findShortestPath(int numNodes, int start, int end)
+    {
+      Long dist[] = dijkstra_lazy(numNodes, start);
+      Stack<Integer> path = new Stack<>();
+      if(dist[end] == Long.MAX_VALUE)
+        System.out.println("No path");
+      
+      for(int curr = end; curr!= -1; curr = prev[curr])
+          path.push(curr);
+      
+      while(path.size()!=0)
+          System.out.print(path.pop()+ " ");
+    }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     static class pair<neighbour,weight> implements Comparable < pair<neighbour,weight> >
     {
       int neighbour;
