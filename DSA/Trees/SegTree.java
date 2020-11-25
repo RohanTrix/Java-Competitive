@@ -18,7 +18,7 @@ public class SegTree
         int right = sc.nextInt();
         int res = query(tree,0,n-1, left, right,1);
         System.out.println(res);
-        
+        `
 
     }
 
