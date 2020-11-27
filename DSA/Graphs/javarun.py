@@ -1,8 +1,8 @@
 import os
 import time
-prog_name = "*.java"
+prog_name = "Prim_lazy.java"
 os.system(f'javac -d Classes {prog_name}')
 t1 = time.time()
-os.system(f'java -cp Classes Dijkstra_lazy')
+os.system(f'java -cp Classes Prim_lazy')
 t2 = time.time()
 print("TIME TAKEN: ",t2-t1)
