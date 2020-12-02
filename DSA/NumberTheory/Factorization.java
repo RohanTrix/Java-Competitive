@@ -1,3 +1,5 @@
+package NumberTheory;
+
 
 import java.util.*;
 

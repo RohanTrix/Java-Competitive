@@ -1,3 +1,5 @@
+package Graphs;
+
 import java.util.*;
 @SuppressWarnings("rawtypes")
 public class Dijkstra_lazy {

@@ -1,6 +1,7 @@
+package Graphs;
+
 
 import java.util.*;
-
 @SuppressWarnings("unchecked")
 public class Prim_lazy {
   // Adjaceny List
@@ -42,8 +43,7 @@ public class Prim_lazy {
       Edge latestEdge = pq.poll();
       int nodeIndex = latestEdge.x;
       if( visited.contains(nodeIndex))
-        continue;
-      hm.put(nodeIndex, latestEdge);
+        continue; 
       edgeCount++;
       mstCost += latestEdge.weight;
       
@@ -59,6 +59,7 @@ public class Prim_lazy {
   
   public void addPQ(int nodeIndex)
   {
+    // Marks nodeIndex as VISITED and adds all its edges to PriorityQueue
     visited.add(nodeIndex);
     
     for( Edge e : edges.get(nodeIndex))
