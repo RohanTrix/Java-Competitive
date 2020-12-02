@@ -61,6 +61,26 @@ public class Tree {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     void inOrderIterative(TreeNode root)
     {
-        
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        Stack<TreeNode> s = new Stack<TreeNode>();
+        TreeNode currNode = root;
+        boolean done = false;
+        while(!done)
+        {
+            if(currNode != null)
+            {
+                s.push(currNode);
+                currNode = currNode.left;
+            }
+            else
+            {
+                if(s.isEmpty())
+                    done = true;
+                else
+                {
+                    
+                }
+            }
+        }
     }
 }
