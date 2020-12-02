@@ -78,7 +78,9 @@ public class Tree {
                     done = true;
                 else
                 {
-                    
+                    currNode = s.pop();
+                    res.add(currNode);
+                    currNode = currNode.right;
                 }
             }
         }
