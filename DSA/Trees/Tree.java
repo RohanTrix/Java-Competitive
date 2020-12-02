@@ -106,6 +106,13 @@ public class Tree {
         Stack<TreeNode> s = new Stack<TreeNode>();
         if( root ==null)
             return;
-        
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.offer(root);
+        q.offer(null);
+        while(!q.isEmpty())
+        {
+            TreeNode temp = q.poll();
+            
+        }
      }
 }
