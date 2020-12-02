@@ -66,9 +66,6 @@ public class Tree {
             2) While the done!=true, PUSH the currNode to stack and SET currNode = currNode.left
             3) When leftest node is reached, pop the element out of stack and store it in the ArrayList and SET
             currNode = currNode.right;
-
-
-
         */
         ArrayList<TreeNode> res = new ArrayList<TreeNode>();
         Stack<TreeNode> s = new Stack<TreeNode>();
@@ -94,7 +91,15 @@ public class Tree {
             }
         }
     }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    void postOrderRecursive(TreeNode root)
+    {
+        if(root ==null)
+            return;
+        preOrderRecursive(root.left);
+        preOrderRecursive(root.right);
+        System.out.println(root.val);
+    }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      
 }
