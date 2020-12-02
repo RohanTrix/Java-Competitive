@@ -61,7 +61,16 @@ public class Tree {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     void inOrderIterative(TreeNode root)
     {
-        ArrayList<Integer> res = new ArrayList<Integer>();
+        /* ALGORITHM
+            1) Keep a flag variable to determine if traversal of tree is over or not
+            2) While the done!=true, PUSH the currNode to stack and SET currNode = currNode.left
+            3) When leftest node is reached, pop the element out of stack and store it in the ArrayList and SET
+            currNode = currNode.right;
+
+
+
+        */
+        ArrayList<TreeNode> res = new ArrayList<TreeNode>();
         Stack<TreeNode> s = new Stack<TreeNode>();
         TreeNode currNode = root;
         boolean done = false;
@@ -85,4 +94,7 @@ public class Tree {
             }
         }
     }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
 }
