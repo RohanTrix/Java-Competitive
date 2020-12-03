@@ -108,11 +108,16 @@ public class Tree {
             return;
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         q.offer(root);
-        q.offer(null);
+        ArrayList<TreeNode> res = new ArrayList<TreeNode>();
         while(!q.isEmpty())
         {
             TreeNode temp = q.poll();
-            
+            res.add(temp);
+            if( temp.left!=null)
+                q.offer(temp.left);
+            if( temp.right!=null)
+                q.offer(temp.right);  
         }
+        for(TreeNode i : res) System.out.print(i.val+ " ");
      }
 }
