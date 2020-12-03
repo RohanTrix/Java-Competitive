@@ -16,6 +16,6 @@ def click_me():
     os.system('git push -u origin main')
     time.sleep(60)
 # Adding a button
-action = ttk.Button(win, text = "Click me!", command = click_me)
-action.grid(column=1, row=0)
+action = ttk.Button(win, text = "Manual", command = click_me)
+action.grid(column=0, row=0)
 win.mainloop()
