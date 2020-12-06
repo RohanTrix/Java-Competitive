@@ -1,14 +1,12 @@
-package Trees;
-
 import java.util.*;
 public class Tree {
-    class TreeNode
+    static class TreeNode
     {
         int val;
         TreeNode left;
         TreeNode right;
         public TreeNode(){}
-        public TreeNode(int value){ this.val = value; }
+        public TreeNode(int value){ this.val = value; this.left=null; this.right = null;}
         public TreeNode(int val, TreeNode left, TreeNode right)
         {
             this.val = val;
@@ -19,7 +17,18 @@ public class Tree {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        sc.close();
+        TreeNode t1 = new TreeNode(1);
+        TreeNode t2 = new TreeNode(2);
+        TreeNode t3 = new TreeNode(3);
+        TreeNode t4 = new TreeNode(4);
+        TreeNode t5 = new TreeNode(5);
+        TreeNode t7 = new TreeNode(7);
+        t2.left = t4;
+        t2.right = t5;
+        t1.left = t2;
+        t1.right = t3;
+        t3.right = t7;
+        Tree ob = new Tree();
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     void preOrderRecursive(TreeNode root)
@@ -101,12 +110,10 @@ public class Tree {
         System.out.println(root.val);
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-     void levelOrderRecursive(TreeNode root)
+     void levelOrder(TreeNode root)
      {
-        Stack<TreeNode> s = new Stack<TreeNode>();
-        if( root ==null)
-            return;
         Queue<TreeNode> q = new LinkedList<TreeNode>();
+        if( root ==null) return;
         q.offer(root);
         ArrayList<TreeNode> res = new ArrayList<TreeNode>();
         while(!q.isEmpty())
@@ -120,4 +127,37 @@ public class Tree {
         }
         for(TreeNode i : res) System.out.print(i.val+ " ");
      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+public ArrayList<ArrayList<Integer>> levelOrderTestMode(TreeNode root) {
+    ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+    if (root == null)
+    return res;
+    // Initialization
+    Queue<TreeNode> q = new LinkedList<TreeNode>();
+    q.offer(root);
+    q.offer(null);
+    ArrayList<Integer> curr = new ArrayList<Integer>();
+    while (!q.isEmpty()) {
+    TreeNode tmp = q.poll();
+    if (tmp != null) {
+    curr.add(tmp.val);
+    if (tmp.left != null)
+    q.offer(tmp.left);
+    if (tmp.right != null)
+    q.offer(tmp.right);
+    } else {
+    ArrayList<Integer> c_curr = new ArrayList<Integer>(curr);
+    res.add(c_curr);
+    curr.clear(); // Java will clear the reference, so have to new an new ArrayList.
+    // completion of a level;
+    if (!q.isEmpty())
+    q.offer(null);
+    }
+    }
+    return res;
+   }
+   
 }
