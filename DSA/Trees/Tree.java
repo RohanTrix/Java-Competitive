@@ -129,9 +129,7 @@ public class Tree {
      }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-public ArrayList<ArrayList<Integer>> levelOrderTestMode(TreeNode root) {
+    public ArrayList<ArrayList<Integer>> levelOrderTestMode(TreeNode root) {
     ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
     if (root == null)
     return res;
@@ -143,21 +141,34 @@ public ArrayList<ArrayList<Integer>> levelOrderTestMode(TreeNode root) {
     while (!q.isEmpty()) {
     TreeNode tmp = q.poll();
     if (tmp != null) {
-    curr.add(tmp.val);
+        curr.add(tmp.val);
     if (tmp.left != null)
-    q.offer(tmp.left);
+        q.offer(tmp.left);
     if (tmp.right != null)
-    q.offer(tmp.right);
+        q.offer(tmp.right);
     } else {
-    ArrayList<Integer> c_curr = new ArrayList<Integer>(curr);
-    res.add(c_curr);
-    curr.clear(); // Java will clear the reference, so have to new an new ArrayList.
-    // completion of a level;
+        ArrayList<Integer> c_curr = new ArrayList<Integer>(curr);
+        res.add(c_curr);
+        curr.clear(); // Java will clear the reference, so have to new an new ArrayList.
+        // completion of a level;
     if (!q.isEmpty())
-    q.offer(null);
+        q.offer(null);
     }
     }
     return res;
    }
-   
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   public TreeNode LCA(TreeNode root, TreeNode a, TreeNode b)
+    {
+        if(root == null) return null;
+        if(root ==a || root==b) return root;
+        TreeNode left = LCA(root.left, a, b);
+        TreeNode right = LCA(root.right, a , b);
+        if( left!=null && right!=null) return root;
+        if(left ==null && right ==null) return null;
+        
+        return (left!=null)? left: right;
+    }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
