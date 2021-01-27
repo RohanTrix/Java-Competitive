@@ -13,7 +13,7 @@ class TrieNode
     {
         this.data = data; 
     }
-    public void insertString(TrieNode root, String s)
+    public static void insertString(TrieNode root, String s)
     {
         TrieNode v = root;
         for (char ch : s.toCharArray()) {
@@ -27,7 +27,7 @@ class TrieNode
         }
         v.wordEnd++;
     }
-    public boolean searchWord(TrieNode root, String word)
+    public static boolean searchWord(TrieNode root, String word)
     {
         TrieNode v = root;
         for(char ch : word.toCharArray())
@@ -39,6 +39,7 @@ class TrieNode
         }
         return v.wordEnd>0;
     }
+    public boolean checkPrefix()
 }
 public class Trie
 {
