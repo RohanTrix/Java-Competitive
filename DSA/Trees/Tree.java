@@ -130,32 +130,33 @@ public class Tree {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public ArrayList<ArrayList<Integer>> levelOrderTestMode(TreeNode root) {
-    ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
-    if (root == null)
-    return res;
-    // Initialization
-    Queue<TreeNode> q = new LinkedList<TreeNode>();
-    q.offer(root);
-    q.offer(null);
-    ArrayList<Integer> curr = new ArrayList<Integer>();
-    while (!q.isEmpty()) {
-    TreeNode tmp = q.poll();
-    if (tmp != null) {
-        curr.add(tmp.val);
-    if (tmp.left != null)
-        q.offer(tmp.left);
-    if (tmp.right != null)
-        q.offer(tmp.right);
-    } else {
-        ArrayList<Integer> c_curr = new ArrayList<Integer>(curr);
-        res.add(c_curr);
-        curr.clear(); // Java will clear the reference, so have to new an new ArrayList.
-        // completion of a level;
-    if (!q.isEmpty())
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        if (root == null)
+            return res;
+        // Initialization
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.offer(root);
         q.offer(null);
-    }
-    }
-    return res;
+        ArrayList<Integer> curr = new ArrayList<Integer>();
+        while (!q.isEmpty()) {
+            TreeNode tmp = q.poll();
+            if (tmp != null) {
+                curr.add(tmp.val);
+            if (tmp.left != null)
+                q.offer(tmp.left);
+            if (tmp.right != null)
+                q.offer(tmp.right);
+            } 
+            else {
+                ArrayList<Integer> c_curr = new ArrayList<Integer>(curr);
+                res.add(c_curr);
+                curr.clear(); // Java will clear the reference, so have to new an new ArrayList.
+                // completion of a level;
+                if (!q.isEmpty())
+                    q.offer(null);
+            }
+            }
+        return res;
    }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
