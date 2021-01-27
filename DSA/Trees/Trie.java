@@ -2,10 +2,34 @@ package Trees;
 class TrieNode
 {
     char data;
-    TrieNode children[] = new TrieNode[26];
+    TrieNode children[] = new TrieNode[128];
     int wordEnd;
+    public TrieNode()
+    {
+        data ='\0';
+        wordEnd = 0;
+    }
+    public TrieNode(char data)
+    {
+        this.data = data; 
+    }
+    public void insertString(TrieNode root, String s)
+    {
+        TrieNode v = root;
+        for (char ch : s.toCharArray()) {
+            TrieNode next = v.children[ch];
+            if(next == null)
+            {
+                next = new TrieNode(ch);
+                v.children[ch] = next;
+            }
+            v = next;
+        }
+        v.wordEnd++;
+    }
+    
 }
-public class TrieMaker
+public class Trie
 {
     public static void main(String args[])
     {
