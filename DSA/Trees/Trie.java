@@ -27,7 +27,18 @@ class TrieNode
         }
         v.wordEnd++;
     }
-    
+    public boolean searchWord(TrieNode root, String word)
+    {
+        TrieNode v = root;
+        for(char ch : word.toCharArray())
+        {
+            TrieNode next = v.children[ch];
+            if(next==null)
+                return false;
+            v = next;
+        }
+        return v.wordEnd>0;
+    }
 }
 public class Trie
 {
