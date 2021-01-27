@@ -1,8 +1,5 @@
 package Graphs;
-
-
 import java.util.*;
-@SuppressWarnings("unchecked")
 public class Prim_lazy {
   // Adjaceny List
   public Map<Integer, Set<Edge>> edges = new TreeMap<>();

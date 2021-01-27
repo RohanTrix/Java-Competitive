@@ -1,3 +1,4 @@
+package Trees;
 import java.util.*;
 public class Tree {
     static class TreeNode
@@ -29,6 +30,7 @@ public class Tree {
         t1.right = t3;
         t3.right = t7;
         Tree ob = new Tree();
+        sc.close();
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     void preOrderRecursive(TreeNode root)
