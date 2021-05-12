@@ -1,7 +1,7 @@
 package BinarySearch;
 
 public class Binary_Search {
-    public static void main(String args[])
+    boolean possible()
     {
 
     }
@@ -9,19 +9,22 @@ public class Binary_Search {
         if(nums == null || nums.length == 0)
           return -1;
       
-        int left = 0, right = nums.length - 1;
+        int left = 0;
+        int right = nums.length - 1;
+
+        int bestAns = -1;
         while(left <= right){
-          // Prevent (left + right) overflow
+         
           int mid = left + (right - left) / 2;
-          if(nums[mid] == target)
-              return mid;
-          else if(nums[mid] < target) 
-              left = mid + 1; 
+          if(possible())
+            {
+              bestAns = mid;
+              right = mid-1;
+            }
           else 
-              right = mid - 1; 
+              left = mid + 1; 
         }
       
-        // End Condition: left > right
-        return -1;
+        return bestAns;
       }
 }
