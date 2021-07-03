@@ -65,9 +65,9 @@ public class Tree {
     {
         if(root ==null)
             return;
-        preOrderRecursive(root.left);
+        inOrderRecursive(root.left);
         System.out.println(root.val);
-        preOrderRecursive(root.right);
+        inOrderRecursive(root.right);
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     void inOrderIterative(TreeNode root)
