@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.*;
+
+@SuppressWarnings("all")
 public class Template 
 {
     static void solve(FastReader sc)
@@ -29,6 +31,31 @@ public class Template
 
         }
     }
+    public static long power(long x, long y, long mod)
+    {
+        long res = 1L;
+        x = x%mod;
+        while(y > 0)
+        {
+            if((y&1)==1)
+                res = (res*x)%mod;
+            
+            y>>=1;
+            x = (x*x)%mod;
+        }
+        return res;
+    }
+    public static int gcd(int a, int b)
+	{
+		if(b == 0)
+		 return a;
+		else
+		return gcd(b,a%b);
+    }
+    public static int lcm(int a, int b)
+    {
+        return (a / gcd(a, b)) * b;
+    }
     static void sort(int[] a) {
 		ArrayList<Integer> l=new ArrayList<>();
 		for (int i:a) l.add(i);
@@ -54,9 +81,6 @@ public class Template
             } else {
                 return Long.compare(this.y,p.y);
             }
-        }
-        public int hashCode() {
-            return (x + " " + y).hashCode();
         }
         public String toString() {
             return x + " " + y;
@@ -107,7 +131,12 @@ public class Template
             } 
             return st.nextToken();
         } 
-  
+        int[] nextArray(int n)
+        {
+            int[] a=new int[n];
+			for (int i=0; i<n; i++) a[i]=nextInt();
+			return a;
+        }
         int nextInt() 
         { 
             return Integer.parseInt(next()); 
@@ -152,6 +181,15 @@ public class Template
             }
             pw.println();
         }
+        void viewArray1D(int a[])
+        {
+            println(Arrays.toString(a));
+        }
+        void viewArray2D(int arr[][])
+        {
+            for (int[] row: arr)
+            viewArray1D(row);
+        }
         void closer()
         {
             try{
@@ -162,7 +200,6 @@ public class Template
             catch(Exception e)
             {
             }
-        
         }
     }
 }
