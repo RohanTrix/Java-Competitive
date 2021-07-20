@@ -56,7 +56,7 @@ public class Dijkstra_lazy {
       {
           pair currNode = pq.poll();
           visited.add(currNode.neighbour);
-          if( dist[currNode.neighbour] < currNode.weight)
+          if( dist[currNode.neighbour] < currNode.weight )
             continue;
 
           for( pair edge : edges.get(currNode.neighbour))
@@ -73,6 +73,7 @@ public class Dijkstra_lazy {
                 }
 
           }
+          //if(currNode.neighbour==endNode) return dist[endNode];
       }
     return dist;
     }

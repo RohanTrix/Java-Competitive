@@ -1,5 +1,6 @@
 package Trees;
 import java.util.*;
+@SuppressWarnings("all")
 public class Tree {
     static class TreeNode
     {

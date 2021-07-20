@@ -1,9 +1,9 @@
-package BinarySearch;
+package Searching;
 
 public class Binary_Search {
     boolean possible()
     {
-
+      return true;
     }
     int binarySearch(int[] nums, int target){
         if(nums == null || nums.length == 0)

@@ -4,7 +4,7 @@ public class Graph {
   // Adjaceny List
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
   // Visited Set
-  public static Set<Integer> visited = new HashSet<Integer>();
+  public Set<Integer> visited = new HashSet<Integer>();
   public static void main(String[] args)
   {
     Scanner sc = new Scanner(System.in);
