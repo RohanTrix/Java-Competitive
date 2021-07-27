@@ -1,10 +1,9 @@
-package Graphs;
 
 import java.util.*;
-public class DSU 
+class DSU 
 {
-    public static int parent[];
-    public static int rank[];
+    public int parent[];
+    public int rank[];
     public DSU(int num)
     {
         parent = new int[num];

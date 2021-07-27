@@ -1,4 +1,4 @@
-package Graphs;
+
 import java.util.*;
 public class Prim_lazy {
   // Adjaceny List

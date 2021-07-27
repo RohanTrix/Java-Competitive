@@ -72,25 +72,6 @@ public class SSSP_Dag {
     }
       return dist;
   }
-  void topsort(int n)
-  {
-    for(int i =1; i<=n;i++)
-    {
-        if(!visited.contains(i))
-        dfs(i);
-    }
-  }
-  void dfs(int v)
-  {
-    if(visited.contains(v))
-        return;
-    visited.add(v);
-    for(pair u : edges.get(v))
-        {
-            dfs(u.neighbour);
-        }
-    stack.offerFirst(v);
-  }
   public void addNode(int u) {
     if (!edges.containsKey(u)) {
       edges.put(u, new TreeSet<pair>());
