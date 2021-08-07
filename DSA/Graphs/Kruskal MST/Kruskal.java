@@ -1,5 +1,4 @@
 import java.util.*;
-
 // LOGIC: https://youtu.be/dYIWheKq5Xc
 
 class Edge implements Comparable<Edge>
@@ -50,7 +49,7 @@ public class Kruskal {
         {
             int x = ob.edges.get(i).x;
             int y = ob.edges.get(i).y;
-            int w = ob.edges.get(i).weight;
+            
             if(ob.DSUfind(x)!=ob.DSUfind(y))
             {
                 ob.res.add(ob.edges.get(i));

@@ -24,7 +24,7 @@ public class SSSP_Dag {
     for(int i =0; i< m;i++)
       g.addEdge(sc.nextInt(), sc.nextInt(), sc.nextLong());
     
-    g.topsort(n);
+    
     System.out.println("Enter the starting node:");
     int s = sc.nextInt();
     Long sssp[] = g.dagShortestPath(n,s);

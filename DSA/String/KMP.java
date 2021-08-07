@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 // REFER: Zenith CP Course-  String Algortihms
@@ -11,10 +12,8 @@ public class KMP {
         lps[0] = -1;
         while(i<n)
         {
-            while(j!=-1 && s.charAt(j)!=s.charAt(i))
-                j = lps[j];
-            i++;
-            j++;
+            while(j!=-1 && s.charAt(j)!=s.charAt(i)) j = lps[j];
+            i++;j++;
             lps[i] = j;
         }
         return lps;

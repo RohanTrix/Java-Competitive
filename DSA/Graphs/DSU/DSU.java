@@ -1,4 +1,4 @@
-
+package Graphs.DSU;
 import java.util.*;
 class DSU 
 {
@@ -16,8 +16,7 @@ class DSU
         {
             return i;
         }
-        parent[i] = find(parent[i]); // Path Compression
-        return parent[i];
+        return parent[i] = find(parent[i]); // Path Compression
     }
     public void union(int a, int b)
     {

@@ -1,4 +1,4 @@
-package Trees;
+
 public class Trie
 {
     static class TrieNode
@@ -6,6 +6,7 @@ public class Trie
         char data;
         TrieNode children[] = new TrieNode[128];
         int wordEnd;
+        int prefix;
         public TrieNode()
         {
             data ='\0';
