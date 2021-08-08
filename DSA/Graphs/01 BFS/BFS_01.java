@@ -19,7 +19,7 @@ public class BFS_01 {
     {
       g.addEdge(sc.nextInt(), sc.nextInt(), sc.nextInt());
     }
-    System.out.println(g.edges);
+    //System.out.println(g.edges);
     g.bfs01(1);
     
     sc.close();
@@ -40,15 +40,12 @@ public class BFS_01 {
       {
         if(distance[u.to] > distance[s] + u.w)
         {
-            distance[u.to] = distance[s] + u.w;
-            if(u.w==0) dq.offerFirst(u.to);
-            else       dq.offerLast(u.to);
-        }    
-        if(u.w==0)
-          dq.offerFirst(u.to);
-        else
-          distance[u.to] = distance[s] + 1;
-          dq.add(u.to);
+          distance[u.to] = distance[s] + u.w;
+          if (u.w == 0)
+              dq.offerFirst(u.to);
+          else
+              dq.offerLast(u.to);
+        }
       }
     }
     System.out.println( Arrays.toString(distance));
