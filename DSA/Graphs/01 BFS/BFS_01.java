@@ -1,7 +1,6 @@
 import java.util.*;
 
 // REFER : AlgoZenith CP Course
-// Code Reference: https://leetcode.com/discuss/general-discussion/1234074/0-1-bfs
 public class BFS_01 {
   // Adjaceny List
   public Map<Integer, ArrayList<Pair>> edges = new TreeMap<>();
@@ -46,11 +45,12 @@ public class BFS_01 {
               dq.offerFirst(u.to);
           else
               dq.offerLast(u.to);
-        }
-      }
+       }
     }
-    System.out.println( Arrays.toString(distance));
+    
   }
+  System.out.println( Arrays.toString(distance));
+}
 
   ///////////////////////////////////// Adjacency List Maker////////////////////////////////////////////////
   public void addNode(int u) {
