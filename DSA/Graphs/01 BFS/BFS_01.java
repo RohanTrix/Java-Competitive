@@ -6,7 +6,7 @@ public class BFS_01 {
   public Map<Integer, ArrayList<Pair>> edges = new TreeMap<>();
   public static void main(String[] args)
   {
-    Graph g = new Graph();
+    BFS_01 g = new BFS_01();
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter Number of Nodes: ");
     int m = sc.nextInt();
