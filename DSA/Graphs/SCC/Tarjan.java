@@ -57,7 +57,7 @@ public class Tarjan {
         }
         g.scc();
         System.out.println(g.components);
-        
+        sc.close();
     }
 
     public void scc() {

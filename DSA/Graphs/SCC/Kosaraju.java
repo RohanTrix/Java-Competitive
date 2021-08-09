@@ -1,7 +1,7 @@
 
 import java.util.*;
-import java.io.*;
-public class SCC_Kosaraju {
+
+public class Kosaraju {
   // Adjaceny List
   public Map<Integer, Set<Integer>> edges = new TreeMap<>();
   // Visited Set
@@ -10,7 +10,7 @@ public class SCC_Kosaraju {
   public static List<Integer> stack = new ArrayList<>();
   public static void main(String[] args)
   {
-    FastReader sc=new FastReader();
+    Scanner sc=new Scanner(System.in);
     System.out.println("Enter the number of nodes:");
     int n = sc.nextInt();
     System.out.println("Enter the number of edges:");
@@ -45,8 +45,8 @@ public class SCC_Kosaraju {
             cnt+=1;
         }
     }
-    sc.print(cnt);
-    sc.closer();
+    System.out.println(cnt);
+    sc.close();
   }
   void dfs(int v) // DFS for first pass- Similar for Topological Sorting
   {
