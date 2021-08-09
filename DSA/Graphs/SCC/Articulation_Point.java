@@ -3,7 +3,7 @@ public class Articulation_Point {
 
     Map<Integer, Set<Integer>> edges = new TreeMap<>();
     HashSet<Integer> visited, articulationPoints;
-    
+    ArrayList<Bridge> bridges;
     int time;
     int[] lowlink, ids;
    
@@ -24,7 +24,8 @@ public class Articulation_Point {
             g.addEdge(sc.nextInt(), sc.nextInt());
         }
         g.findAP();
-        System.out.println(g.articulationPoints);
+        System.out.println("Articulation Points: " + g.articulationPoints);
+        System.out.println("Bridges: "+g.bridges);
         sc.close();
     }
 
@@ -33,6 +34,7 @@ public class Articulation_Point {
         int n = edges.size();
         visited = new HashSet<>();
         articulationPoints = new HashSet<>();
+        bridges = new ArrayList<>();
         time = 1;
         lowlink = new int[n+1];
         ids = new int[n+1];
@@ -46,6 +48,7 @@ public class Articulation_Point {
               dfs(u, -1);
           }
         }
+
       }
     void dfs(int at, int parent) {
         lowlink[at] = ids[at] = time++;
@@ -54,7 +57,7 @@ public class Articulation_Point {
         for (int to : edges.get(at)) 
         {
             if(to==parent) continue;
-            
+
             if (visited.contains(to)) 
                 lowlink[at] = Math.min(lowlink[at], ids[to]);
 
@@ -62,8 +65,12 @@ public class Articulation_Point {
             {
                 dfs(to, at);
                 lowlink[at] = Math.min(lowlink[at], lowlink[to]);
-                if(lowlink[to]>= ids[at] && parent!=-1)
-                    articulationPoints.add(at);
+                if(lowlink[to]>= ids[at] && parent!=-1)   // Handles adding articulation point
+                    articulationPoints.add(at);           // Handles adding articulation point
+                
+                if(lowlink[to]>ids[at])                   // Handles adding Brdige Edge
+                    bridges.add(new Bridge(at, to));      // Handles adding Bridge Edge
+                
                 children++;
             }
         }
@@ -81,5 +88,19 @@ public class Articulation_Point {
     public void addEdge(int u, int v) {
         edges.get(u).add(v);
         edges.get(v).add(u);
+    }
+    ///////////////////////////////////// Bridge Edge ////////////////////////////////////////////////////////
+    static class Bridge
+    {
+        int from, to;
+        public Bridge(int f, int t)
+        {
+            from  = f; to = t;
+        }
+        public String toString()
+        {
+            return "("+from+","+to+")";
+        }
+
     }
 }
