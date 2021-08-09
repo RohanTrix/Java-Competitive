@@ -1,4 +1,4 @@
-package Graphs;
+
 import java.util.*;
 import java.io.*;
 public class SCC_Kosaraju {
@@ -15,8 +15,8 @@ public class SCC_Kosaraju {
     int n = sc.nextInt();
     System.out.println("Enter the number of edges:");
     int m = sc.nextInt();
-    SCC_Kosaraju g = new SCC_Kosaraju();
-    SCC_Kosaraju rev_g = new SCC_Kosaraju();
+    Kosaraju g = new Kosaraju();
+    Kosaraju rev_g = new Kosaraju();
     for(int i =1; i<=n;i++)
     {
       g.addNode(i);

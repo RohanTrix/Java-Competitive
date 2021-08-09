@@ -10,7 +10,7 @@ public class BFS_01 {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter Number of Nodes: ");
     int m = sc.nextInt();
-    for(int i = 1; i<=m; i++) g.addNode(m);
+    for(int i = 1; i<=m; i++) g.addNode(i);
     
     System.out.println("Enter Number of Edges: ");
     int n = sc.nextInt();
