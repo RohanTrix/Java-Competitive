@@ -1,5 +1,36 @@
 import java.util.*;
 
+/* 
+    The idea is to solve the SCC problem in one DFS:
+
+    1. We have an array ids which stores at what unit of time(ID of node)
+       that node i was visited for first time
+    
+    2. Visited Set contains elements which have been visited during current DFS.
+
+    3. Lowlink array stores the lowest ID of node from which we can reach node i.
+       This eventually stores the ID of leader(first visited) component of the SCC.
+    
+    4. We maintain a stack during dfs as the elements occuring in one SCC will stay
+       adjacent to each other with the leader of the SCC at the lowest position among them.
+    
+    Procedure:
+       1. Init the variables and DS.
+       2. For every node which is not explored(ID=-1), we call a DFS from it.
+       3. In DFS of node `at`, we set LowLink = ID = time, visit it and add to stack.
+       4. For each neighbour `to` of `at`, if `to` has never been explored, we call DFS(to)
+       5. After this DFS is over, we check if it is in visited set(denoting whether it is 
+          in the current SCC being created).
+       6. If yes, we update its low link value to low link of the node it is going to
+       7. Finally we check, if the node `at` is the leader node of a SCC( same ID and Low Link)
+          If it is, we keep popping elements from the stack and add it to a SCC List until 
+          we have popped the leader from the stack.
+        8. We finally add this SCC list to our final result. 
+
+*/
+
+
+
 public class Tarjan {
 
     Map<Integer, Set<Integer>> edges = new TreeMap<>();
