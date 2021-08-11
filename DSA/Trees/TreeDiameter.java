@@ -28,7 +28,7 @@ public class TreeDiameter {
         int end = ob.maxNode;
         System.out.println("Diameter Length : "+ob.maxlen);
         System.out.println("Path from "+start+" to "+end);
-
+        sc.close();
 
     }
     public void dfs(int node, int d)
