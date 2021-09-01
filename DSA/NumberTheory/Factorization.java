@@ -1,16 +1,15 @@
 package NumberTheory;
-
-
 import java.util.*;
 
 public class Factorization {
-
+  static boolean[] prime;
   public static void main(String args[])
   {
-      System.out.println(numberOfPrimeDivisors(10));
+      System.out.println(generatePrimes(10));
   }
+  //----------------------------------SEIVE OF ERASTOTHENES---------------------------------
   public static int[] generatePrimes(int n) {
-    boolean[] prime = new boolean[n + 1];
+    prime = new boolean[n + 1];
     Arrays.fill(prime, 2, n + 1, true);
 
     for (int i = 2; i * i <= n; i++)
@@ -26,6 +25,9 @@ public class Factorization {
 
     return Arrays.copyOf(primes, cnt);
   }
+  //------------------------------------------------------------------------------------
+
+  //---------------------------------- PRIME CHECK---------------------------------------
   public static boolean isPrime(long n) {
     if (n <= 1)
       return false;
@@ -34,15 +36,8 @@ public class Factorization {
         return false;
     return true;
   }
-  public static int[] numberOfPrimeDivisors(int n) {
-    int[] divisors = new int[n + 1];
-    Arrays.fill(divisors, 2, n + 1, 1);
-    for (int i = 2; i * i <= n; ++i)
-      if (divisors[i] == 1)
-        for (int j = i; j * i <= n; j++)
-          divisors[j * i] = divisors[j] + 1;
-    return divisors;
-  }
+  //------------------------------------------------------------------------------------
+  
 
 
 }

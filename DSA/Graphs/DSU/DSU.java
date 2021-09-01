@@ -9,6 +9,7 @@ class DSU
         parent = new int[num];
         rank = new int[num];
         Arrays.fill(rank,1);
+        Arrays.fill(parent,-1);
     }
     public int find( int i)
     {

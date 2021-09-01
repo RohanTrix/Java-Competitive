@@ -22,6 +22,7 @@ public class LCA {
 
         ob.parent = new int[n][20];
         ob.depth = new int[n];
+        System.out.println(ob.lca(sc.nextInt(),sc.nextInt()));
     }
     int lca(int u, int v)
     {
@@ -55,12 +56,15 @@ public class LCA {
         depth[node] = dep;
         for(int i=1; i<20; i++)
         {
+            if(parent[node][i-1]!=-1)
             parent[node][i] = parent[parent[node][i-1]][i-1]; // 2^i breaks to 2^(i-1) and 2^(i-1)
+            else
+            parent[node][i]  = -1;
         }
         for(int to : edges.get(node))
         {
             if(to!=prev)
-                dfs(to, node, d+1);
+                dfs(to, node, dep+1);
         }
     }
     /////////////////////////////////////////// ADJ LIST ///////////////////////////////////////////
