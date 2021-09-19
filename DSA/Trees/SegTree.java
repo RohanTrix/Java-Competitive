@@ -1,4 +1,4 @@
-package Trees;
+package DSA.Trees;
 
 import java.util.*;
 import java.util.stream.IntStream;

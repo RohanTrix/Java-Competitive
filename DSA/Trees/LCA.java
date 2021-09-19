@@ -1,3 +1,4 @@
+package DSA.Trees;
 import java.util.*;
 public class LCA {
     Map<Integer, Set<Integer>> edges = new HashMap<>();
@@ -23,6 +24,7 @@ public class LCA {
         ob.parent = new int[n][20];
         ob.depth = new int[n];
         System.out.println(ob.lca(sc.nextInt(),sc.nextInt()));
+        sc.close();
     }
     int lca(int u, int v)
     {

@@ -1,4 +1,4 @@
-package Trees;
+package DSA.Trees;
 import java.util.*;
 @SuppressWarnings("all")
 public class Tree {

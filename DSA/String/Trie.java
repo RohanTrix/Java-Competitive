@@ -1,4 +1,4 @@
-
+package DSA.String;
 public class Trie
 {
     static class TrieNode
