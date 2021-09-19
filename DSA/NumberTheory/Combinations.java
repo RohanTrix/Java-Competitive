@@ -1,4 +1,4 @@
-package NumberTheory;
+package DSA.NumberTheory;
 public class Combinations {
     long mod  = 1000000007L;
     int N = (int)2e5+5;

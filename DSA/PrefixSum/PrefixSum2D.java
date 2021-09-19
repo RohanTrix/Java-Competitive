@@ -1,4 +1,4 @@
-package PrefixSum;
+package DSA.PrefixSum;
 import java.util.*;
 public class PrefixSum2D {
     public static void main(String args[])

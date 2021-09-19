@@ -1,4 +1,4 @@
-package Searching;
+package DSA.Searching;
 
 public class Binary_Search {
     boolean possible()

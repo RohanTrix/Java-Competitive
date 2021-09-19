@@ -1,4 +1,4 @@
-
+package Codes;
 import java.util.stream.*;
 @SuppressWarnings("all")
 public class StreamsAPI {

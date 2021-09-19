@@ -1,4 +1,4 @@
-
+package DSA.Graphs.SCC;
 import java.util.*;
 
 public class Kosaraju {

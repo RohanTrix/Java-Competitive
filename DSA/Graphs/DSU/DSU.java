@@ -1,4 +1,4 @@
-package Graphs.DSU;
+package DSA.Graphs.DSU;
 import java.util.*;
 class DSU 
 {

@@ -1,3 +1,4 @@
+package DSA.Trees;
 import java.util.*;
 public class TreeDiameter {
     // 2 times DFS approach

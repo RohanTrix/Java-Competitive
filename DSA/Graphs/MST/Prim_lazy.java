@@ -1,4 +1,4 @@
-
+package DSA.Graphs.MST;
 import java.util.*;
 public class Prim_lazy {
   // Adjaceny List
@@ -76,14 +76,14 @@ public class Prim_lazy {
     edges.get(u).add(new Edge(v, w));
     edges.get(v).add(new Edge(u, w));
   }
-}
-class Edge implements Comparable<Edge>{
-  int x;
-  long weight;
-
-  public Edge(int f, long val) { x = f; weight = val;}
-  public int compareTo(Edge e)
-  {
-      return Long.compare(this.weight, e.weight);
+  static class Edge implements Comparable<Edge>{
+    int x;
+    long weight;
+  
+    public Edge(int f, long val) { x = f; weight = val;}
+    public int compareTo(Edge e)
+    {
+        return Long.compare(this.weight, e.weight);
+    }
   }
 }

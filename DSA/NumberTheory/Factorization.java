@@ -1,4 +1,4 @@
-package NumberTheory;
+package DSA.NumberTheory;
 import java.util.*;
 
 public class Factorization {

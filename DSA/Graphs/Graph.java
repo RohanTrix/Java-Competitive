@@ -1,4 +1,4 @@
-package Graphs;
+package DSA.Graphs;
 import java.util.*;
 public class Graph {
   // Adjaceny List

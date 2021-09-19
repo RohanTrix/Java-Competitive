@@ -1,4 +1,4 @@
-package Graphs;
+package DSA.Graphs;
 import java.util.*;
 @SuppressWarnings("rawtypes")
 public class SSSP_Dag {

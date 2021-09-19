@@ -1,3 +1,4 @@
+package DSA.Trees;
 import java.util.*;
 
 public class TreeCenter
@@ -21,6 +22,7 @@ public class TreeCenter
         }
         ArrayList<Integer> res = ob.findCenter();
         System.out.println(res);
+        sc.close();
     }
     public ArrayList<Integer> findCenter()
     {

@@ -1,3 +1,4 @@
+package DSA.Graphs.MST;
 import java.util.*;
 // LOGIC: https://youtu.be/dYIWheKq5Xc
 
