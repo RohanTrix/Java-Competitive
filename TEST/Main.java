@@ -1,66 +1,67 @@
-import java.io.*;
-import java.util.*;
 
-@SuppressWarnings("all")
-
-public class Main 
+public class Main
 {
     static class TrieNode
     {
-        int data;
-        TrieNode children[] = new TrieNode[2];
+        char data;
+        TrieNode children[] = new TrieNode[128];
+        int wordEnd;
         int prefix;
         public TrieNode()
         {
-            data =-1;
-            prefix = 0;
+            data ='\0';
+            wordEnd = 0;
         }
-        public TrieNode(int data)
+        public TrieNode(char data)
         {
             this.data = data; 
-            this.prefix = 0;
         }
-        public void insertNum(TrieNode root, int n)
+        public void insertString(TrieNode root, String s)
         {
             TrieNode curr = root;
-            for(int i = 30-1; i>=0; i--)
-            {
-                prefix++;
-                int nextBit = (n&(1<<i))!=0?1:0;
-                TrieNode next = curr.children[nextBit];
+            for (char ch : s.toCharArray()) {
+                TrieNode next = curr.children[ch];
                 if(next == null)
                 {
-                    next = new TrieNode(nextBit);
-                    curr.children[nextBit] = next;
+                    next = new TrieNode(ch);
+                    curr.children[ch] = next;
                 }
                 curr = next;
             }
-            curr.data = n;
+            curr.wordEnd++;
         }
-        public int query_max_xor(TrieNode root, int n)
+        public boolean searchWord(TrieNode root, String word)
         {
-            TrieNode curr = root;
-            int ans = 0;
-            for(int i = 30-1; i>=0; i--)
+            TrieNode v = root;
+            for(char ch : word.toCharArray())
             {
-                int nextBit = (n&(1<<i))!=0?1:0;
-                TrieNode next = curr.children[1^nextBit];
-                if(next!=null)
-                    curr = next;
-                else
-                    curr = curr.children[nextBit];
+                TrieNode next = v.children[ch];
+                if(next==null)
+                    return false;
+                v = next;
             }
-            return curr.data;
+            return v.wordEnd>0;
+        }
+        public boolean checkPrefixExists(TrieNode root,String p)
+        {
+            TrieNode v = root;
+            for(char ch : p.toCharArray())
+            {
+                TrieNode next = v.children[ch];
+                if(next==null)
+                    return false;
+                v = next;
+            }
+            return true;
         }
     }
-
-    public static void main(String[] args)
+    public static void main(String args[])
     {
         TrieNode root = new TrieNode();
-        int arr[] = {2,3,4};
-        int n = 12;
-        for(int i : arr) root.insertNum(root, i);
-        System.out.println(n^root.query_max_xor(root, n));
-        
+        root.insertString(root, "hello");
+        root.insertString(root, "hell");
+        root.insertString(root, "how");
+        root.insertString(root, "bored");
+        System.out.println(root.checkPrefixExists(root, "hel"));
     }
 }
