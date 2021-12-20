@@ -18,17 +18,17 @@ public class Trie
         }
         public void insertString(TrieNode root, String s)
         {
-            TrieNode v = root;
+            TrieNode curr = root;
             for (char ch : s.toCharArray()) {
-                TrieNode next = v.children[ch];
+                TrieNode next = curr.children[ch];
                 if(next == null)
                 {
                     next = new TrieNode(ch);
-                    v.children[ch] = next;
+                    curr.children[ch] = next;
                 }
-                v = next;
+                curr = next;
             }
-            v.wordEnd++;
+            curr.wordEnd++;
         }
         public boolean searchWord(TrieNode root, String word)
         {
