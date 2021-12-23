@@ -93,8 +93,6 @@ public class Factorization {
       n/=spf[n];
     }
     return ans;
-    
-    return ans;
   }
   // ------------------------------------------------------------------------------------
   static class pair
