@@ -1,5 +1,3 @@
-package DSA.Trees;
-
 import java.io.*;
 import java.util.*;
 

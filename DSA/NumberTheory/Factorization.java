@@ -5,7 +5,7 @@ import java.util.*;
 public class Factorization {
   
   public static void main(String args[]) {
-    System.out.println(generatePrimes(100));
+    System.out.println(SPF_factorize(100));
   }
 
   // ----------------------------------SEIVE OF ERASTOTHENES---------------------------------
@@ -19,6 +19,23 @@ public class Factorization {
           prime[j] = false;
 
     return prime;
+  }
+  // ------------------------------------------------------------------------------------
+
+  // ----------------------------------SMALLEST PRIME FACTOR---------------------------------
+  public static int[] generateSPF(int n) {
+    int[] spf = new int[n + 1];
+    Arrays.fill(spf, 2, n + 1, -1);
+
+    for (int i = 2; i<= n; i++)
+      if(spf[i] == -1)
+      {
+        spf[i] = i;
+        for (int j = i * i; j <= n; j += i)
+          if(spf[j] == -1)
+            spf[j] = i;
+      }
+    return spf;
   }
   // ------------------------------------------------------------------------------------
 
@@ -66,6 +83,20 @@ public class Factorization {
   }
   // ------------------------------------------------------------------------------------
 
+  // ---------------------------------- PRIME FACTORIZE MULTIPLE QUERY---------------------------------------
+  public static ArrayList<Integer> SPF_factorize(int n) {
+    ArrayList<Integer> ans = new ArrayList<>();
+    int spf[] = generateSPF(n);
+    while(n>1)
+    {
+      ans.add(spf[n]);
+      n/=spf[n];
+    }
+    return ans;
+    
+    return ans;
+  }
+  // ------------------------------------------------------------------------------------
   static class pair
   {
     long x,y;
