@@ -5,7 +5,7 @@ import java.util.*;
 public class Factorization {
   
   public static void main(String args[]) {
-    System.out.println(SPF_factorize(100));
+    System.out.println(countDiv(100));
   }
 
   // ----------------------------------SEIVE OF ERASTOTHENES---------------------------------
@@ -95,6 +95,25 @@ public class Factorization {
     return ans;
   }
   // ------------------------------------------------------------------------------------
+
+  // ---------------------------------- COUNT DIVISORS---------------------------------------
+  public static int countDiv(int n) {
+    int ans = 1;
+    for(int i = 2; i*i<=n; i++)
+    {
+      int cnt = 0;
+      while(n%i==0)
+      {
+        n/=i;
+        cnt++;
+      }
+      ans*=(cnt+1);
+    }
+    if(n>1) ans*=2;
+    return ans;
+  }
+  // ------------------------------------------------------------------------------------
+
   static class pair
   {
     long x,y;
