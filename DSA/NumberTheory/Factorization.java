@@ -5,7 +5,7 @@ import java.util.*;
 public class Factorization {
   
   public static void main(String args[]) {
-    System.out.println(countDiv(100));
+    System.out.println(SPF_countDiv(100));
   }
 
   // ----------------------------------SEIVE OF ERASTOTHENES---------------------------------
@@ -114,6 +114,51 @@ public class Factorization {
   }
   // ------------------------------------------------------------------------------------
 
+  // ---------------------------------- COUNT DIVISORS MULTIPLE QUERIES---------------------------------------
+  public static int SPF_countDiv(int n) {
+    
+    int spf[] = generateSPF(n);
+    int ans = 1, prev = spf[n];
+    int cnt = 1;
+    n = n/prev;
+    while(n>1)
+    {
+      if( spf[n] == prev)
+      {
+        cnt++;
+      }
+      else
+      {
+        prev = spf[n];
+        ans*=(cnt+1);
+        cnt = 1;
+      }
+      n = n/prev;
+    }
+    if(n>1) ans*=(cnt+1);
+    return ans;
+  }
+  // ------------------------------------------------------------------------------------
+
+  // ---------------------------------- SUM OF DIVISORS---------------------------------------
+  public static int sumDiv(int n) {
+    int ans = 1;
+    for(int i = 2; i*i<=n; i++)
+    {
+      int sum = 1;
+      int term = 1;
+      while(n%i==0)
+      {
+        n/=i;
+        term*=i;
+        sum+=term;
+      }
+      res*=sum;
+    }
+    if(n>1) ans*=(n+1);
+    return ans;
+  }
+  // ------------------------------------------------------------------------------------
   static class pair
   {
     long x,y;
