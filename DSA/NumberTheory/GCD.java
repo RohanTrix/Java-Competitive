@@ -21,7 +21,7 @@ public class GCD {
     // ----------------------------------Extended GCD in log(min(a,b)) ---------------------------------
 
     // returns {gcd, x, y} such gcd(a,b) = a*x + b*y
-    static long[] gcdExtended(long a, long b)
+    public static long[] gcdExtended(long a, long b)
     {
         if(b == 0)
             return a > 0 ? new long[]{a,1,0} : new long[]{-a,-1,0};

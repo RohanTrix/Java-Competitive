@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class Bellman_Ford {
     Set<pair> edges = new HashSet<>();
     int INT_MAX = Integer.MAX_VALUE/2;
     public static void main(String[] args) {
@@ -8,10 +8,11 @@ public class Main {
         int n = sc.nextInt();
         System.out.println("Enter the number of edges:");
         int m = sc.nextInt();
-        Main g = new Main();
+        Bellman_Ford g = new Bellman_Ford();
         // for (int i = 1; i <= n; i++)
         //     g.addNode(i);
 
+        // Storing Edge List in edges
         for (int i = 0; i < m; i++)
             g.addEdge(sc.nextInt(), sc.nextInt(), sc.nextLong());
 
