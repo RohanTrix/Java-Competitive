@@ -19,7 +19,7 @@ class DSU
         }
         return parent[i] = find(parent[i]); // Path Compression
     }
-    public void union(int a, int b)
+    public boolean union(int a, int b)
     {
         int s1 = find(a);
         int s2 = find(b);
@@ -35,6 +35,8 @@ class DSU
                 parent[s2] = s1;
                 rank[s1] += rank[s2]; 
             }
+            return true;
         }
+        return false;
     }
 }
