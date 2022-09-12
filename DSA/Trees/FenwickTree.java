@@ -11,7 +11,7 @@ public class FenwickTree {
     // Update Value at i
     void update(int i, int val)
     {
-        while(i < size)
+        while(i <= size)
         {
             table[i]+=val;
             i += Integer.lowestOneBit(i);
@@ -31,7 +31,7 @@ public class FenwickTree {
     // Cimpute sum values from [i,j]
     void rangeSum(int l, int r)
     {
-        sum(r) - sum(l);
+        sum(r) - sum(l-1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
